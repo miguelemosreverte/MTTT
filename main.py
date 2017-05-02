@@ -153,8 +153,8 @@ class TTT():
         self.moses_dir = "/home/moses/mosesdecoder"
         return self.moses_dir
 
-    def _prepare_corpus(self, output_text, source_lang, target_lang, st_train, tt_train, lm_text):
-        self.output_text = str(output_text)
+    def _prepare_corpus(self, language_model_name, source_lang, target_lang, st_train, tt_train, lm_text):
+        self.language_model_name = str(language_model_name)
         self.source_lang = str(source_lang)
         self.target_lang = str(target_lang)
         self.lm_text = str(lm_text)
@@ -162,15 +162,15 @@ class TTT():
         self.st_train = str(st_train)
         """@brief     Runs moses truecaser, tokenizer and cleaner."""
         output = ""
-        output_directory = adapt_path_for_cygwin(self.is_windows, self.output_text)
+        output_directory = adapt_path_for_cygwin(self.is_windows, self.language_model_name)
         if output_directory is not None:
             # Change directory to the output_directory.
             try:
-                os.chdir(self.output_text)
+                os.chdir(self.language_model_name)
             except:
                 # Output directory does not exist.
-                os.mkdir(self.output_text)
-                os.chdir(self.output_text)
+                os.mkdir(self.language_model_name)
+                os.chdir(self.language_model_name)
             cmds = []
             # 1) Tokenization
             # a) Target text
@@ -270,8 +270,8 @@ class TTT():
 
     def _train(self):
         # print "==============================>", self.is_corpus_preparation_ready
-        print self.output_text
-        output_directory = adapt_path_for_cygwin(self.is_windows, self.output_text)
+        print self.language_model_name
+        output_directory = adapt_path_for_cygwin(self.is_windows, self.language_model_name)
         output = ""
         if output_directory is not None and self.is_corpus_preparation_ready:
             cmds = []
@@ -325,7 +325,7 @@ class TTT():
                     output += err
 
             # Adding output from training.out
-            training = adapt_path_for_cygwin(self.is_windows, self.output_text) + "/training.out"
+            training = adapt_path_for_cygwin(self.is_windows, self.language_model_name) + "/training.out"
             try:
                 with open(training, "r") as f:
                    output += "\n" + f.read()
@@ -344,7 +344,7 @@ class TTT():
         output = "Running decoder....\n\n"
         # Run the decoder.
         cmd = get_test_command(self.moses_dir,
-                                   adapt_path_for_cygwin(self.is_windows, self.output_text) + "/train/model/moses.ini",
+                                   adapt_path_for_cygwin(self.is_windows, self.language_model_name) + "/train/model/moses.ini",
                                    in_file,
                                    out_file)
         # use Popen for non-blocking
