@@ -338,7 +338,7 @@ class TTT():
 
     def _machine_translation(self, mt_in):
         base=os.path.basename(mt_in)
-        mt_out = os.path.dirname(mt_in) +  os.path.splitext(base)[0] + "_translated" + os.path.splitext(base)[1]
+        mt_out = os.path.dirname(mt_in) +  "/" + os.path.splitext(base)[0] + "_translated" + os.path.splitext(base)[1]
         output = "Running decoder....\n\n"
         # Run the decoder.
         cmd = get_test_command(self.moses_dir,
