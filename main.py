@@ -162,7 +162,7 @@ class TTT():
         self.st_train = str(st_train)
         """@brief     Runs moses truecaser, tokenizer and cleaner."""
         output = ""
-        output_directory = adapt_path_for_cygwin(self.is_windows, self.language_model_name)
+        output_directory = self.language_model_name
         if output_directory is not None:
             # Change directory to the output_directory.
             try:
@@ -176,37 +176,37 @@ class TTT():
             # a) Target text
             self.target_tok = generate_input_tok_fn(self.target_lang,
                                                     output_directory)
-            cmds.append(get_tokenize_command(adapt_path_for_cygwin(self.is_windows, self.moses_dir),
+            cmds.append(get_tokenize_command(self.moses_dir,
                                              self.target_lang,
-                                             adapt_path_for_cygwin(self.is_windows, self.tt_train),
+                                             self.tt_train,
                                              self.target_tok))
             # b) Source text
             self.source_tok = generate_input_tok_fn(self.source_lang,
                                                     output_directory)
-            cmds.append(get_tokenize_command(adapt_path_for_cygwin(self.is_windows, self.moses_dir),
+            cmds.append(get_tokenize_command(self.moses_dir,
                                              self.source_lang,
-                                             adapt_path_for_cygwin(self.is_windows, self.st_train),
+                                             self.st_train,
                                              self.source_tok))
             # c) Language model
             self.lm_tok = generate_lm_tok_fn(output_directory)
-            cmds.append(get_tokenize_command(adapt_path_for_cygwin(self.is_windows, self.moses_dir),
+            cmds.append(get_tokenize_command(self.moses_dir,
                                              self.source_lang,
-                                             adapt_path_for_cygwin(self.is_windows,self.lm_text),
+                                             self.lm_text,
                                              self.lm_tok))
 
             # 2) Truecaser training
             # a) Target text
-            cmds.append(get_truecaser_train_command(adapt_path_for_cygwin(self.is_windows, self.moses_dir),
+            cmds.append(get_truecaser_train_command(self.moses_dir,
                                                     output_directory,
                                                     self.target_lang,
                                                     self.target_tok))
             # b) Source text
-            cmds.append(get_truecaser_train_command(adapt_path_for_cygwin(self.is_windows, self.moses_dir),
+            cmds.append(get_truecaser_train_command(self.moses_dir,
                                                     output_directory,
                                                     self.source_lang,
                                                     self.source_tok))
             # c) Language model
-            cmds.append(get_truecaser_train_command(adapt_path_for_cygwin(self.is_windows, self.moses_dir),
+            cmds.append(get_truecaser_train_command(self.moses_dir,
                                                     output_directory,
                                                     self.target_lang,
                                                     self.lm_tok))
@@ -216,7 +216,7 @@ class TTT():
             # a) Target text
             self.target_true = generate_input_true_fn(self.target_lang,
                                                       output_directory)
-            cmds.append(get_truecaser_command(adapt_path_for_cygwin(self.is_windows, self.moses_dir),
+            cmds.append(get_truecaser_command(self.moses_dir,
                                               output_directory,
                                               self.target_lang,
                                               self.target_tok,
@@ -224,14 +224,14 @@ class TTT():
             # b) Source text
             self.source_true = generate_input_true_fn(self.source_lang,
                                                       output_directory)
-            cmds.append(get_truecaser_command(adapt_path_for_cygwin(self.is_windows, self.moses_dir),
+            cmds.append(get_truecaser_command(self.moses_dir,
                                               output_directory,
                                               self.source_lang,
                                               self.source_tok,
                                               self.source_true))
             # c) Language model
             self.lm_true = generate_lm_true_fn(output_directory)
-            cmds.append(get_truecaser_command(adapt_path_for_cygwin(self.is_windows, self.moses_dir),
+            cmds.append(get_truecaser_command(self.moses_dir,
                                               output_directory,
                                               self.target_lang,
                                               self.target_tok, self.lm_true))
@@ -241,7 +241,7 @@ class TTT():
             self.input_clean = generate_input_clean_fn(output_directory)
             self.source_clean = self.input_true + "." + self.source_lang
             self.target_clean = self.input_true + "." + self.target_lang
-            cmds.append(get_cleaner_command(adapt_path_for_cygwin(self.is_windows, self.moses_dir),
+            cmds.append(get_cleaner_command(self.moses_dir,
                                             self.source_lang,
                                             self.target_lang,
                                             self.input_true,
@@ -271,7 +271,7 @@ class TTT():
     def _train(self):
         # print "==============================>", self.is_corpus_preparation_ready
         print self.language_model_name
-        output_directory = adapt_path_for_cygwin(self.is_windows, self.language_model_name)
+        output_directory = self.language_model_name
         output = ""
         if output_directory is not None and self.is_corpus_preparation_ready:
             cmds = []
@@ -325,7 +325,7 @@ class TTT():
                     output += err
 
             # Adding output from training.out
-            training = adapt_path_for_cygwin(self.is_windows, self.language_model_name) + "/training.out"
+            training = self.language_model_name + "/training.out"
             try:
                 with open(training, "r") as f:
                    output += "\n" + f.read()
@@ -339,14 +339,12 @@ class TTT():
     def _machine_translation(self, mt_in):
         base=os.path.basename(mt_in)
         mt_out = os.path.dirname(mt_in) +  os.path.splitext(base)[0] + "_translated" + os.path.splitext(base)[1]
-        in_file = adapt_path_for_cygwin(self.is_windows, mt_in)
-        out_file = adapt_path_for_cygwin(self.is_windows,mt_out)
         output = "Running decoder....\n\n"
         # Run the decoder.
         cmd = get_test_command(self.moses_dir,
-                                   adapt_path_for_cygwin(self.is_windows, self.language_model_name) + "/train/model/moses.ini",
-                                   in_file,
-                                   out_file)
+                                   self.language_model_name + "/train/model/moses.ini",
+                                   mt_in,
+                                   mt_out)
         # use Popen for non-blocking
         #print cmd
         proc = subprocess.Popen([cmd],
@@ -354,7 +352,7 @@ class TTT():
                                     stderr=subprocess.PIPE,
                                     shell=True)
         (out, err) = proc.communicate()
-        f = open(out_file, 'r')
+        f = open(mt_out, 'r')
         mt_result = f.read()
         if mt_result == "":
                 if out != "":
