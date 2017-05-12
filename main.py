@@ -54,6 +54,7 @@ install_and_import("itertools")
 from commands import *
 from files_processing import *
 from constants import moses_dir_fn
+from evaluation_scripts import evaluate
 
 
 UI_INFO = """
@@ -364,3 +365,7 @@ class TTT():
 
         f.close()
         return output
+
+
+    def evaluate(self, checkbox_indexes, test, reference):
+        return evaluate(checkbox_indexes, test, reference)
