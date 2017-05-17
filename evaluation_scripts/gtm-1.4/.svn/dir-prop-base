@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 53
+Bitext.class
+Run.class
+Score.class
+gtm.class
+gtm.jar
+
+END

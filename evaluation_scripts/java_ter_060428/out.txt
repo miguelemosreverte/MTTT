@@ -1,0 +1,991 @@
+Ref: The British spokesman indicated that " the American authorities responsible for security insisted that all passengers be questioned , " adding that " passengers were forced to leave the plane and undergo questioning by the American authorities . " ( AFA20040101.0510 - 8 )
+Hyp: He noted that the authorities responsible for the British American Security insisted the questioning of all the passengers , " he said , adding that the passengers were forced to quit the plane and interrogated by American authorities . ( AFA20040101.0510 - 8 )
+Hyp': British He noted that the American authorities responsible for Security insisted the of all the passengers he said , " , adding that the passengers were forced to quit the plane and interrogated questioning by the American authorities . ( AFA20040101.0510 - 8 )
+Alignment: (D SS D     S IS I SS  I  S    S   S      D     )
+NumShifts: 5
+  [18, 19, 18/21] ([,, "])
+  [7, 7, 34/35] ([the])
+  [7, 7, 1/-1] ([British])
+  [8, 8, 7/4] ([American])
+  [12, 12, 32/33] ([questioning])
+Score: 0.45454545454545453 (20.0/44.0)
+
+Ref: The British spokesman noted , " The American authorities responsible for security insisted on interrogating all passengers " . He added , " The passengers were forced to disembark from the aircraft and face questioning by the American authorities . " ( AFA20040101.0510 - 8 )
+Hyp: Al Baz , was fired during a visit to Israel in Ramallah last August the idea of a new truce between the Palestinians and Israel but between Palestinian factions under Egyptian auspices on this matter did not result in as a result . ( AFA20040101.5400 - 6 )
+Hyp': Al Baz was fired during a , visit Israel in Ramallah last August idea of on a new truce between the Palestinians and Israel but between Palestinian factions under to Egyptian auspices this the matter did not result in as a result . ( AFA20040101.5400 - 6 )
+Alignment: (IISSSS SSSSSSSS SSSSSSSSSSSSS ISS SSSSSSSS D S S )
+NumShifts: 4
+  [2, 2, 4/6] ([,])
+  [8, 8, 27/29] ([to])
+  [32, 32, 13/15] ([on])
+  [13, 13, 30/33] ([the])
+Score: 0.9782608695652174 (45.0/46.0)
+
+Ref: The British spokesman indicated that " the American authorities in charge of security insisted on questioning all passengers , " adding that the " passengers were forced to get off the plane and submit to questioning by the American authorities . " ( AFA20040101.0510 - 8 )
+Hyp: JERUSALEM 1 2 ( AFP ) The correspondence of the former Israeli army newspaper Ben striking shift in the field of public information programme for selected after " paint " Network television broadcast by Cable in Israel . ( AFA20040102.2700 - 3 )
+Hyp': The JERUSALEM 1 2 " the ( AFP ) correspondence of former Israeli army newspaper Ben striking " shift in the field of public information programme for selected after paint Network television broadcast by Cable in Israel . ( AFA20040102.2700 - 3 )
+Alignment: ( DSSS  SSSS DSSSSSS SS DSSSSSSSSSSSS SSS D S S )
+NumShifts: 4
+  [27, 27, 5/2] (["])
+  [7, 7, 0/-1] ([The])
+  [10, 10, 6/4] ([the])
+  [29, 29, 19/16] (["])
+Score: 0.851063829787234 (40.0/47.0)
+
+Ref: The British spokesman indicated that the American Authorities in charge of security insisted on interrogating all the passengers , adding that " the passengers were forced to get off the airplane and undergo interrogation by the American Authorities . " ( AFA20040101.0510 - 8 )
+Hyp: The Turkish authorities on 26 December that it dismantled the group associated with the Turkish terrorist organization Al Qaeda responsible for a series of attacks . ( AFA20040102.6110 - 5 )
+Hyp': The that Turkish authorities of 26 December on it dismantled the group associated with the Turkish terrorist organization Al Qaeda responsible for a series attacks . ( AFA20040102.6110 - 5 )
+Alignment: ( DDD DDDSS SS SS DDSSS DDDDDSSSSSSSSSS D S S )
+NumShifts: 3
+  [3, 3, 13/6] ([on])
+  [5, 5, 4/0] ([that])
+  [23, 23, 10/3] ([of])
+Score: 0.8444444444444444 (38.0/45.0)
+
+Ref: During his visit to Ramallah and Israel last August , al-Baz introduced the idea of another truce between the Palestinians and Israel , but Egyptian-sponsored talks on the matter between Palestinian factions did not produce a result . ( AFA20040101.5400 - 6 )
+Hyp: For his part , called for the Colombian president Alvaro ( not represented are related to the minister of defence ) rebels to " resolve themselves and return to constitutional way " and asserted that " terrorism will not win , " in Colombia . ( AFA20040103.0120 - 5 )
+Hyp': For his part called for Colombian to president Alvaro and ( represented are , related to the minister of defence ) rebels " resolve the themselves and return to constitutional way " asserted that " terrorism will not win , not " in Colombia . ( AFA20040103.0120 - 5 )
+Alignment: (S IIIS IS SSS SS S IISSS S ISSSSSSSSSSSS SSS  S S )
+NumShifts: 5
+  [3, 3, 9/13] ([,])
+  [5, 5, 18/24] ([the])
+  [9, 9, 33/40] ([not])
+  [20, 20, 3/5] ([to])
+  [31, 31, 5/8] ([and])
+Score: 0.9767441860465116 (42.0/43.0)
+
+Ref: During his visit to Ramallah and Israeli last August Al-Baz put forward the concept of a new truce between the Palestinians and Israel but talks between the Palestinian groups under Egyptian patronage on this matter have not yielded a result . ( AFA20040101.5400 - 6 )
+Hyp: He will be divided into several groups of pilgrims to perform the services it will be deployed special forces to interfere in the case of congestion . ( AFA20040103.2900 - 8 )
+Hyp': to He will be divided into the several of pilgrims perform the services it will be deployed special forces to groups interfere in case of congestion AFA20040103.2900 8 . ( - )
+Alignment: (DDD DDDSSSSS S DDSS SSSSSSSS DDDDSSSSSSS  D D )
+NumShifts: 6
+  [6, 6, 28/19] ([groups])
+  [26, 27, 41/31] ([., (])
+  [8, 8, 3/-1] ([to])
+  [22, 22, 12/5] ([the])
+  [27, 27, 43/31] ([-])
+  [28, 28, 45/31] ([)])
+Score: 0.9347826086956522 (43.0/46.0)
+
+Ref: During a visit to Ramallah and Israel last August , Al-Baz had initiated an idea for a new truce between the Palestinians and Israel , but talks between the Palestinian factions over this issue under Egyptian auspices have not produced any result . ( AFA20040101.5400 - 6 )
+Hyp: ISLAMABAD , 3.1 ( AFP ) Indian Prime Minister Atal Bihari Vajpayee on Saturday in Islamabad in the first visit by the chairman of the Indian government to Pakistan since February 1999 . ( AFA20040103.5700 - 2 )
+Hyp': visit ISLAMABAD 3.1 ( AFP ) Indian , Prime Minister Atal Bihari Vajpayee on Saturday in Islamabad in the first by the chairman of the Indian government to Pakistan since February 1999 . ( AFA20040103.5700 - 2 )
+Alignment: (DD SSSSSS SSSSSSSSSS DDDDDSS DDDSSSSSSSSSS  S S )
+NumShifts: 2
+  [1, 1, 9/6] ([,])
+  [19, 19, 2/-1] ([visit])
+Score: 0.875 (42.0/48.0)
+
+Ref: Al-Baz launched during his visit to Ramallah and Israel last August , the idea of a new ceasefire between the Palestinians and Israel , but talks between the Palestinian groups under Egyptian patronage concerning this matter did not produce results . ( AFA20040101.5400 - 6 )
+Hyp: Khaddam has made these statements at the end of his meeting with a delegation of Iraqi clans to visit Damascus . ( AFA20040103.7010 - 6 )
+Hyp': his visit to Khaddam has made these statements at the end of a meeting with delegation of Iraqi clans Damascus . ( AFA20040103.7010 - 6 )
+Alignment: (DDD   SSSSSS S  DDDDDDDDDDSSSSSSSSSSSSSDDDDDDD)
+NumShifts: 4
+  [9, 9, 3/-1] ([his])
+  [12, 12, 15/9] ([a])
+  [17, 17, 5/0] ([to])
+  [18, 18, 4/0] ([visit])
+Score: 0.9565217391304348 (44.0/46.0)
+
+Ref: Jerusalem 1 - 2 ( AFP ) - Nouga Shahar , former correspondent for the Israeli army's newspaper , underwent a remarkable transformation in the media world after she was chosen to present the Playboy program on a cable television network in Israel . ( AFA20040102.2700 - 3 )
+Hyp: The Israeli ministerial committee decided Wednesday to increase the number of the population of the agricultural settlements in the Golan Heights by 50 percent . ( AFA20040103.7010 - 7 )
+Hyp': - ( ) The ministerial committee decided Wednesday increase the Israeli number of population of the agricultural settlements in the Golan to the Heights by 50 percent . AFA20040103.7010 7
+Alignment: (DD D D DSSSSSS  SSSSSSS  DDDDDS D DDDDDSSSS DDSSD)
+NumShifts: 6
+  [6, 6, 31/19] ([to])
+  [25, 25, 4/-1] ([(])
+  [11, 11, 33/20] ([the])
+  [2, 2, 15/8] ([Israeli])
+  [27, 27, 2/-1] ([-])
+  [29, 29, 6/1] ([)])
+Score: 0.9183673469387755 (45.0/49.0)
+
+Ref: Jerusalem 2 - 1 ( AFP ) Noga Shahar , former correspondent of the Israeli army gazette , has carried out a dramatic media transformation following her selection to present the " Play Boy " program for a television network broadcast by cable in Israel . ( AFA20040102.2700 - 3 )
+Hyp: Said a source close to the minors that the prince of Monaco was " fatigue " after the end of the Year celebrations would be subject to a series of medical examinations . ( AFA20040103.9100 - 4 )
+Hyp': - Said source close to of the minors that the prince Monaco a was " fatigue " after the end of the Year celebrations would be subject to a series of medical examinations AFA20040103.9100 . ( 4 )
+Alignment: (DD DDDDDSSSS  DDSSSSS SSSSSSSS SSSSSS DDSSSSS  DDS )
+NumShifts: 4
+  [32, 33, 46/35] ([., (])
+  [1, 1, 21/11] ([a])
+  [9, 9, 12/3] ([of])
+  [33, 33, 2/-1] ([-])
+Score: 0.9019607843137255 (46.0/51.0)
+
+Ref: Jerusalem 1 - 2 ( AFP ) - The former correspondent for the Israeli Army Newspaper , Noga Shahar , has undergone a remarkable transformation in the media field following her selection to host the " Playboy " program for a television network that broadcasts by cable in Israel . ( AFA20040102.2700 - 3 )
+Hyp: Army was pursuing an extensive process for more than two weeks in Nablus in search of Palestinian activists . ( AFA20040103.9200 - 6 )
+Hyp': - ( was ) pursuing an extensive process for Army more than two weeks in Nablus in search of Palestinian activists . AFA20040103.9200 6
+Alignment: (DD D S SSSS DD DDDDDDSSSS DDDDSSSSSSSSSDDDDDDDDDDDDDDDD)
+NumShifts: 4
+  [0, 0, 14/6] ([Army])
+  [19, 19, 4/-1] ([(])
+  [21, 21, 2/-1] ([-])
+  [23, 23, 6/2] ([)])
+Score: 0.9636363636363636 (53.0/55.0)
+
+Ref: Jerusalem 2 - 1 ( AFP ) The former correspondent for the Israeli Army newspaper , Noga Shahar , made a remarkable transformation in the information field after she was chosen to present a " Playboy " program for a cable television network in Israel . ( AFA20040102.2700 - 3 )
+Hyp: Tony Blair Put on President Mubarak New Ideas to Advance the Peace Process ( Maher ) ( AFA20040104.3110 - 1 )
+Hyp': Tony Blair - 1 ( ) Put on President Mubarak New Ideas Advance the Peace Process Maher ( AFA20040104.3110 ) to
+Alignment: (SS   D DDDDDDDDDDSSSSSSS SSSSSS DDDDDDDDDDDDDDDDDDD)
+NumShifts: 4
+  [18, 19, 2/1] ([-, 1])
+  [17, 17, 6/3] ([)])
+  [16, 16, 4/3] ([(])
+  [12, 12, 31/20] ([to])
+Score: 0.9607843137254902 (49.0/51.0)
+
+Ref: The Turkish authorities confirmed on December 26 that they had dismantled the Turkish group linked to the terrorist al-Qaeda organization responsible for the series of attacks . ( AFA20040102.6110 - 5 )
+Hyp: Said Maher told reporters that Blair , who met with Mubarak on Saturday night in Sharm el Sheikh resort on the Red Sea , he proposed that the quartet to play an important role through some new ideas put forward by . " ( AFA20040104.3110 - 3 )
+Hyp': Said Maher told reporters Blair , who met with Mubarak on Saturday night in Sharm el that Sheikh resort on the Red Sea , he proposed that quartet to play an the important role through some new ideas put forward by . " ( AFA20040104.3110 - 3 )
+Alignment: (IIIIIISSSS IIISS SSS IIIISSS II SSSSSSSSS I S S )
+NumShifts: 2
+  [4, 4, 7/16] ([that])
+  [27, 27, 16/31] ([the])
+Score: 1.28125 (41.0/32.0)
+
+Ref: The Turkish authorities confirmed that they had on 26 December dismantled a Turkish group linked to the Al-Qaeda terrorist organization responsible for a series of attacks . ( AFA20040102.6110 - 5 )
+Hyp: The expert who requested anonymity said that " the situation of the matter is linked to the dead bodies " . ( AFA20040104.7300 - 4 )
+Hyp': The expert who requested that anonymity said " the situation the matter is linked to the dead bodies of " . ( AFA20040104.7300 - 4 )
+Alignment: ( SSS DSSSSSSSS   DDDDDSS S  S S )
+NumShifts: 2
+  [10, 10, 24/18] ([of])
+  [6, 6, 4/3] ([that])
+Score: 0.75 (24.0/32.0)
+
+Ref: Turkish authorities confirmed that it dismantled on December 26 the Turkish group tied to the terrorist Al-Qaeda Organization , which is responsible for the series of attacks . ( AFA20040102.6110 - 5 )
+Hyp: . consultant before entering the hospital , " We have a difference in the judicial police and the gendarmerie in Paris is prepared to intervene when the teams to identify with what we need it . " ( AFA20040104.7300 - 5 )
+Hyp': . consultant before entering the hospital " We it have a difference in the judicial police and to the gendarmerie in Paris , prepared to is intervene when the teams identify with what we need . " ( AFA20040104.7300 - 5 )
+Alignment: (IIIISSSS SSSS SSS  SSS IS SS IIISSS I S   )
+NumShifts: 4
+  [28, 28, 13/16] ([to])
+  [6, 6, 18/22] ([,])
+  [21, 21, 20/24] ([is])
+  [34, 34, 4/7] ([it])
+Score: 1.0303030303030303 (34.0/33.0)
+
+Ref: The Turkish Authorities confirmed that on 26 December it broke the Turkish group linked to Al-Qaida terrorist organization , responsible for the series of attacks . ( AFA20040102.6110 - 5 )
+Hyp: He added , " when there is a Palestinian action against the Israelis do not abstain without the minimum move the world nothing about the Israeli crimes in Nablus and Rafah . " particular ( AFA20040104.8400 - 4 )
+Hyp': He added " when there is a Palestinian action against the Israelis do not abstain without the minimum move the world , nothing about the Israeli crimes in Nablus and Rafah . " particular ( AFA20040104.8400 - 4 )
+Alignment: (SSSSSSSSSS IIISSSSSSS SS IIISSS II S S )
+NumShifts: 1
+  [2, 2, 18/21] ([,])
+Score: 1.064516129032258 (33.0/31.0)
+
+Ref: For his part , Colombian President Alvaro Uribe ( no relation to the Defense Minister ) called on the rebels to " disband and return to the constitutional way , " and stressed that " terrorism will never be victorious " in Colombia . ( AFA20040103.0120 - 5 )
+Hyp: News Agency quoted the Saudi Prince Nayef as saying before leaving Riyadh on Saturday , heading to Tunisia to participate in the meetings of Arab interior ministers " even though the channels open between us and them ( British ) did not for aircraft of anything . " ( AFA20040104.9200 - 3 )
+Hyp': News Agency quoted Saudi Prince Nayef as saying before leaving Riyadh Saturday heading to the Tunisia to participate in on the meetings of Arab interior ministers even though the channels open between , us " and them ( British ) did not for aircraft of anything " . ( AFA20040104.9200 - 3 )
+Alignment: (IISSSSSSSSSSS  SSSS  SSSSSSS ISS I  SSSSSSSSSSS  S S )
+NumShifts: 6
+  [3, 3, 12/15] ([the])
+  [11, 11, 17/20] ([on])
+  [12, 12, 29/33] ([,])
+  [14, 14, 11/12] ([to])
+  [26, 26, 30/34] (["])
+  [46, 46, 43/47] ([.])
+Score: 0.9591836734693877 (47.0/49.0)
+
+Ref: For his part , Columbian President Alvaro Uribe ( no relation to the Minister of Defense ) called on rebels to " disband themselves and return to the constitutional path " . He confirmed , " Terrorism will never win " in Columbia . ( AFA20040103.0120 - 5 )
+Hyp: On 24 December reported that Annan will meet 19 of the current Iraqi transitional governing council to examine the role of the United Nations could play in Iraq . ( AFA20040105.3220 - 4 )
+Hyp': On 24 December reported that Annan meet 19 the of current Iraqi transitional governing council to examine the role of the United Nations could play Iraq will AFA20040105.3220 - in 4 . ( )
+Alignment: (DDDDSSSSSSSS D SSSSS DDDDDS DSSSSSSSS DSS S  DDD )
+NumShifts: 4
+  [6, 6, 37/27] ([will])
+  [8, 8, 14/9] ([of])
+  [28, 29, 44/32] ([., (])
+  [25, 25, 41/29] ([in])
+Score: 0.8979591836734694 (44.0/49.0)
+
+Ref: For his part , Colombian President Alvaro Uribe ( no relation to the defense minister ) , called on the rebels to " dissolve themselves and return to the constitutional path , " and affirmed that " terrorism will never prevail " in Colombia . ( AFA20040103.0120 - 5 )
+Hyp: Straw . " I think we have established a relationship of trust with Libya renounce terrorism and provided first and second to give up on the continuing its programme for developing weapons of mass destruction . " ( AFA20040105.4910 - 7 )
+Hyp': Straw I think we have established a relationship of trust with Libya renounce and provided first on the " and second to give up continuing its programme for developing weapons of terrorism mass destruction . " . ( AFA20040105.4910 - 7 )
+Alignment: (DDSSSSSSSSSSSSSSSS  DD DD S SSSSSSSSS SSS DD  S S )
+NumShifts: 4
+  [24, 25, 18/18] ([on, the])
+  [1, 1, 44/36] ([.])
+  [1, 1, 22/19] (["])
+  [13, 13, 37/31] ([terrorism])
+Score: 0.86 (43.0/50.0)
+
+Ref: On his part , the Colombian President , Alvaro Yurip ( not related to the Minister of Defense ) called on the rebels to " dissolve themselves and return to the constitutional road " and stressed that " terrorism will never win " in Colombia . ( AFA20040103.0120 - 5 )
+Hyp: Washington 6 1 ( AFP ) American official announced yesterday a Turkish prime minister Rajab Tayib Ardogan would travel to the United States the end of January in an official visit in Iraq in particular section of the Kurdish section of the larger . ( AFA20040105.6000 - 2 )
+Hyp': Washington 6 1 AFP ) American official announced yesterday a ( Turkish prime minister Rajab Tayib Ardogan would travel United States the end of January in an to the official visit Iraq in particular section of the Kurdish section of the in larger . ( AFA20040105.6000 - 2 )
+Alignment: (SSSSSSSSSS SSSSSSSSSS DDSSSSS  SSSSSSSSSSSS S  S S )
+NumShifts: 3
+  [19, 20, 30/28] ([to, the])
+  [3, 3, 10/10] ([(])
+  [31, 31, 43/41] ([in])
+Score: 0.8823529411764706 (45.0/51.0)
+
+Ref: He added that pilgrims would be divided into multiple groups to carry out religious rites and that special forces would be deployed to intervene in the event of overcrowding . ( AFA20040103.2900 - 8 )
+Hyp: Riyadh 5 1 ( AFP ) Saudi security source said on Monday told Agence France Presse , was found on Sunday night to Monday a bomb in the office of special telephone in Riyadh , was withdrawn " from the place , without mention any details about the nature of the bomb . ( AFA20040105.6200 - 2 )
+Hyp': Riyadh 5 1 ( AFP ) Saudi security source said on Monday told Agence France Presse , was found on Sunday night to Monday a bomb the office of special telephone in Riyadh , was withdrawn " from the place , without mention any details about in the nature of the bomb . ( AFA20040105.6200 - 2 )
+Alignment: (IIIIIIIIIIIISSSSSSSSSS SSSSSS IIIIIIIIIISSSSSS  S IS  S S )
+NumShifts: 1
+  [26, 26, 24/46] ([in])
+Score: 1.4285714285714286 (50.0/35.0)
+
+Ref: He added that pilgrims would be divided into numerous groups to perform the rites and special forces would be deployed to intervene in the event of crowding . ( AFA20040103.2900 - 8 )
+Hyp: TEHRAN , 6 1 ( AFP ) Iranian Foreign Ministry spokesman said that Iran welcomes the adoption of its neighbour Afghanistan a new constitution continues its full support of the interim government headed by Hamid Karzai . ( AFA20040106.6100 - 2 )
+Hyp': TEHRAN , 6 1 ( AFP ) Iranian Foreign Ministry spokesman said that Iran welcomes the adoption its neighbour Afghanistan a new constitution continues its full support of the interim government headed by Hamid of Karzai . ( AFA20040106.6100 - 2 )
+Alignment: (IIISSSSSSSSSSSS IISSSSSSSSSS IIIIS S  S S )
+NumShifts: 1
+  [17, 17, 25/34] ([of])
+Score: 1.0909090909090908 (36.0/33.0)
+
+Ref: He added that pilgrims will be divided into various groups to perform the rites and that special forces will be deployed to intervene in the event of over-crowdedness . ( AFA20040103.2900 - 8 )
+Hyp: Hamid Reza Asefi in a statement broadcast by the Iranian news agency on Monday evening to build the first constitution since the fall of the Taliban regime is " an important step . " ( AFA20040106.6100 - 3 )
+Hyp': Hamid Reza Asefi a statement broadcast by Iranian news agency on Monday evening to build the first constitution since the fall the Taliban regime is " in an the important step of " . ( AFA20040106.6100 - 3 )
+Alignment: (IIISSSSSSSSSS S SSSSSSSSSS I IS S  S S )
+NumShifts: 4
+  [3, 3, 23/28] ([in])
+  [7, 7, 24/29] ([the])
+  [21, 21, 26/31] ([of])
+  [32, 32, 28/33] ([.])
+Score: 1.0 (34.0/34.0)
+
+Ref: He added that pilgrims will be divided into many groups to perform the rituals and that special forces will be spread to intervene in case of overcrowding . ( AFA20040103.2900 - 8 )
+Hyp: North Korea and Iran Participated in the Development of Weapons of Mass Destruction in Libya ( Newspaper ) ( AFA20040106.7300 - 1 )
+Hyp': North Korea Iran Participated in the and Development of Weapons of Mass Destruction in Libya ( Newspaper ) ( AFA20040106.7300 - 1 )
+Alignment: (DDDDDDDSSSSS D DDSSSSSS SSSS S S )
+NumShifts: 1
+  [2, 2, 14/6] ([and])
+Score: 0.8484848484848485 (28.0/33.0)
+
+Ref: Islamabad 1 - 3 ( AFP ) - India's Prime Minister Attal Behari Vajpayee arrived in Islamabad today Saturday , the first visit to Pakistan by an Indian head of state since February 1999 . ( AFA20040103.5700 - 2 )
+Hyp: The newspaper said that the Libyan declaration would allow the inspectors examined each of military technology from North Korea and Iran . ( AFA20040106.7300 - 6 )
+Hyp': ) - The newspaper said that Libyan declaration would allow the inspectors examined the each military technology from North Korea and Iran of AFA20040106.7300 6 . (
+Alignment: (DDDDDD  DSSSSSSSSSSS SSSSSSSS DDSS  DDDD)
+NumShifts: 5
+  [21, 22, 35/26] ([., (])
+  [4, 4, 20/11] ([the])
+  [13, 13, 29/20] ([of])
+  [22, 22, 2/-1] ([-])
+  [24, 24, 6/-1] ([)])
+Score: 0.975 (39.0/40.0)
+
+Ref: Islamabad 3 - 1 ( AFP ) Indian Prime Minister Atal Bihari Vajpayee arrived today , Saturday , in Islamabad on the first visit to be conducted by an Indian Prime Minister to Pakistan since February 1999 . ( AFA20040103.5700 - 2 )
+Hyp: The army offered his condolences to the families of soldiers in a statement . ( AFA20040129.5120 - 6 )
+Hyp': - ( ) The army offered his condolences families of soldiers in a statement the . to AFA20040129.5120 6
+Alignment: (DD D D DDDSSSSSSSS SS DS DDDDDDDDSSDDDDDDDD)
+NumShifts: 5
+  [5, 5, 24/14] ([to])
+  [5, 5, 21/11] ([the])
+  [13, 13, 4/-1] ([(])
+  [16, 16, 2/-1] ([-])
+  [18, 18, 6/1] ([)])
+Score: 0.9767441860465116 (42.0/43.0)
+
+Ref: Islamabad 1 - 3 ( AFP ) - Indian Prime Minister Atal Bihari Vajpayee arrived today , Saturday , in Islamabad for the first visit made by an Indian prime minister to Pakistan since February 1999 . ( AFA20040103.5700 - 2 )
+Hyp: WASHINGTON , 30 1 ( AFP ) Democratic MP Victor Snider's Friday that the idea of American parliamentarians who visited Iran considered this week during a dinner between the Iranian ambassador members of Congress to the United Nations Mohammad Javad Zarif . ( AFA20040130.6910 - 2 )
+Hyp': WASHINGTON , 30 1 ( AFP ) Democratic MP Victor Snider's Friday that idea of American parliamentarians who visited Iran considered this week during a the dinner between the Iranian ambassador members of Congress to the United Nations Mohammad Javad Zarif . ( AFA20040130.6910 - 2 )
+Alignment: (SSSS   IIISSSSSSSSSSSSSSS SSSSSSSS IISSSS  S   )
+NumShifts: 1
+  [13, 13, 22/25] ([the])
+Score: 0.9047619047619048 (38.0/42.0)
+
+Ref: Islamabad 3 - 1 ( AFP ) Indian Prime Minister Atal Behari Vajpaye arrived today , Saturday , in Islamabad on the first visit by an Indian Prime Minister to Pakistan since February 1999 . ( AFA20040103.5700 - 2 )
+Hyp: " I believe that this is only in being recognized , the world would be better if Iran and the United States to overcome the differences . " The lack of confidence ( AFA20040130.6910 - 9 )
+Hyp': " I believe that this is only being recognized the world would be , better if in Iran and the United States overcome the differences . to " The lack of confidence ( AFA20040130.6910 - 9 )
+Alignment: (DDSSSSSSSSSSSSS SS SS DSSSSSS SSSSS S S )
+NumShifts: 3
+  [7, 7, 18/16] ([in])
+  [9, 9, 15/13] ([,])
+  [22, 22, 29/26] ([to])
+Score: 0.9 (36.0/40.0)
+
+Ref: Khaddam made these statements at the close of his meeting with a delegation of Iraqi tribes visiting Damascus . ( AFA20040103.7010 - 6 )
+Hyp: Bremer said that " these officers have the Iraqi and other tangible progress to ensure security and the future of the new Iraq . ( AFA20040131.3700 - 8 )
+Hyp': Bremer said that " these officers have the and other tangible progress to ensure security and the future of Iraqi the new Iraq . ( AFA20040131.3700 - 8 )
+Alignment: (IISS SS IIISSSSSSS  SSS  S S )
+NumShifts: 1
+  [8, 8, 14/19] ([Iraqi])
+Score: 0.9166666666666666 (22.0/24.0)
+
+Ref: Khaddam made these statements at the end of his meeting with a delegation of Iraqi tribes that were visiting Damascus . ( AFA20040103.7010 - 6 )
+Hyp: Before that , newspapers reported today that the information or guidance system to a breakdown in may be behind the incident . ( AFA20040131.4510 - 5 )
+Hyp': Before , newspapers reported today that the information or guidance system to a breakdown in may be that behind the incident . ( AFA20040131.4510 - 5 )
+Alignment: (ISSSSS SSSSS SSSS SSS  S S )
+NumShifts: 1
+  [1, 1, 16/17] ([that])
+Score: 0.8076923076923077 (21.0/26.0)
+
+Ref: Khaddam made these remarks at the conclusion of his meeting with a delegation of Iraqi tribes visiting Damascus . ( AFA20040103.7010 - 6 )
+Hyp: Relations with Tunisia , United States of America on the distinctive and traditional relations of mutual trust and respect due to the eighteenth century , particularly to the year the date of the first trade agreement between Tunisia and the United States . ( AKHB20040219.001 - 1 )
+Hyp': Relations Tunisia , United States of America on the distinctive and traditional relations of mutual trust and respect due to the eighteenth century , particularly to the year with the date of the first trade agreement between Tunisia and the United States . ( AKHB20040219.001 - 1 )
+Alignment: (IIISSSSS IIIS IIIIIIIIIIIISS SS IIIIIISSSS  S S )
+NumShifts: 1
+  [1, 1, 10/28] ([with])
+Score: 1.7083333333333333 (41.0/24.0)
+
+Ref: Khaddam made these statements at the end of his meeting with a delegation of Iraqi tribes visiting Damascus . ( AFA20040103.7010 - 6 )
+Hyp: Note at the outset that there was no delay in the area of democracy and freedom of expression in Tunisia in building a democratic society go hand in hand with the work of the comprehensive development . ( AKHB20040221.001 - 1 )
+Hyp': Note outset that there was no delay in at the the area democracy and freedom of expression in Tunisia in building democratic society go hand in hand with the a work of of the comprehensive development . ( AKHB20040221.001 - 1 )
+Alignment: (IIIISSSS I IIIS IIIIIIIIISS I S SSSS  S S )
+NumShifts: 3
+  [1, 2, 4/9] ([at, the])
+  [12, 12, 13/31] ([of])
+  [21, 21, 11/29] ([a])
+Score: 1.4583333333333333 (35.0/24.0)
+
+Ref: Last Wednesday , an Israeli ministerial committee decided to increase the number of kibbutz settlers in the Golan Heights by fifty percent . ( AFA20040103.7010 - 7 )
+Hyp: The secularists are aware that the United States , for a long time , took advantage of factors's underdevelopment humiliating subordination to the west , namely secular curriculum , which advocated by some of us ? ( ALH20040204.001 - 1 )
+Hyp': The secularists are aware that United States , for a long time , took advantage factors's underdevelopment humiliating subordination to west , the namely of secular curriculum , the which advocated by some of us ? ( ALH20040204.001 - 1 )
+Alignment: (IIIIIIIIIISS ISSSSS IS S SSS SS ISSS S S )
+NumShifts: 3
+  [5, 5, 16/28] ([the])
+  [15, 15, 12/24] ([of])
+  [20, 20, 10/22] ([the])
+Score: 1.25 (35.0/28.0)
+
+Ref: An Israeli ministerial committee decided last Wednesday to increase the number of people living in agricultural settlements on the Golan Heights by fifty per cent . ( AFA20040103.7010 - 7 )
+Hyp: And here I am once again at odds with the governing council , it comprises seven members of the judgments in personal or eight national who do not emerge from their patriotism , including specific Bajah Adnan g . , which remind him in his capacity as chairman of the governing council this month . ( ALH20040204.007 - 3 )
+Hyp': And here I am once again at odds with the governing council , it comprises seven members of judgments in personal or eight national who do not emerge from their patriotism , including specific Bajah Adnan g . , which remind him in his capacity as chairman the of the governing council this month . ( ALH20040204.007 - 3 )
+Alignment: (SSSSSSSSS IIIIIIS IIIIIIIIIIIIIIIIIIIIIISS ISSS SSSSSS  S S )
+NumShifts: 1
+  [18, 18, 18/47] ([the])
+Score: 1.7096774193548387 (53.0/31.0)
+
+Ref: An Israeli ministerial committee had decided last Wednesday to increase the number of the agricultural settlement residents in the Golan Heights by a rate of fifty percent . ( AFA20040103.7010 - 7 )
+Hyp: Saudi Arabia have sharia courts after the issuance of the arbitration act of the new Saudi that the arbitration clause , however , contend with its jurisdiction with and in spite of the arbitration clause despite the adherence to one of the parties to the dispute to arbitration . ( ALH20040206.002 - 5 )
+Hyp': Saudi Arabia have sharia courts after the issuance arbitration act to of the new Saudi that of the the arbitration clause , however , contend with its jurisdiction with and in spite of the arbitration clause despite the adherence one of the parties to the dispute to arbitration . ( ALH20040206.002 - 5 )
+Alignment: (IISSSSSSSS S IIS I IIIIIIIISSS II ISSSSS IIIIISS  S S )
+NumShifts: 2
+  [8, 9, 12/16] ([of, the])
+  [38, 38, 8/9] ([to])
+Score: 1.3636363636363635 (45.0/33.0)
+
+Ref: An Israeli Ministerial committee decided last Wednesday to increase the population of agricultural settlements in Golan Heights by 50 % . ( AFA20040103.7010 - 7 )
+Hyp: SYRIA : An international arbitration was sentenced to between the company , " Stahl any and ( Swiss ) and " Public Company for Fertilizers , " the Syrian government company . ( ALH20040206.002 - 7 )
+Hyp': SYRIA : An international arbitration was sentenced to between the company , " Stahl any and ( Swiss ) and " Public Company for Fertilizers , " the Syrian government company . ( ALH20040206.002 - 7 )
+Alignment: (SSSSSSS S IIIIIIIIIIISSSSSSSSSS  S   )
+NumShifts: 0
+Score: 1.1538461538461537 (30.0/26.0)
+
+Ref: A source close to the palace said Monaco's Prince was " suffering from exhaustion " after the end of year celebrations and would undergo a series of medical tests . ( AFA20040103.9100 - 4 )
+Hyp: Income , which went away . ( ALH20040206.003 - 8 )
+Hyp': Income , which went away . ( ALH20040206.003 - 8 )
+Alignment: (DDDDDDDDDDSSSSSSSSSSSDDDDDDDDDDDDDD)
+NumShifts: 0
+Score: 1.0 (35.0/35.0)
+
+Ref: A source close to the Palace said that the Prince of Monaco was " suffering from exhaustion " following the end of year celebrations and would undergo a series of medical examinations . ( AFA20040103.9100 - 4 )
+Hyp: Khomeini a quarter of a century ago has attracted people's thoughts . ( ALH20040220.001 - 2 )
+Hyp': Khomeini quarter of a century ago has attracted people's thoughts . ( ALH20040220.001 - 2 ) a
+Alignment: (DDDDDDDDSS DDDSSSSSSSSSSSSS DDDDDDDDDD)
+NumShifts: 1
+  [1, 1, 27/16] ([a])
+Score: 0.9736842105263158 (37.0/38.0)
+
+Ref: A source close to the palace said that the Prince of Monaco " suffered fatigue " after New Year's celebrations and that he will undergo a series of medical tests . ( AFA20040103.9100 - 4 )
+Hyp: It is not on the future of the Mohammad Khatami . ( ALH20040220.001 - 8 )
+Hyp': It the is not on the future of Mohammad Khatami . ( ALH20040220.001 - 8 )
+Alignment: (DDDS SSS S DDDDDDDDDSSSSSSSSDDDDDDDD)
+NumShifts: 1
+  [7, 7, 4/0] ([the])
+Score: 0.9444444444444444 (34.0/36.0)
+
+Ref: A source close to the Palace stated that the Prince of Monaco " suffered from fatigue " after the celebration marking the end of the year and he will undergo a series of medical tests . ( AFA20040103.9100 - 4 )
+Hyp: Suspicion and malaise and anger are usually the Iraqis . ( ALH20040227.001 - 5 )
+Hyp': Suspicion and malaise and anger are usually the Iraqis . ( ALH20040227.001 - 5 )
+Alignment: (DSSSSSSS DDDDDDDDDSSSSSSSDDDDDDDDDDDDDDDD)
+NumShifts: 0
+Score: 0.975609756097561 (40.0/41.0)
+
+Ref: The army has been conducting a wide scale operation in Nablus over the past two weeks in search of Palestinian activists . ( AFA20040103.9200 - 6 )
+Hyp: Poor , tired of his mission . ( ALH20040227.001 - 6 )
+Hyp': Poor , tired his mission . ( ALH20040227.001 of - 6 )
+Alignment: (DDDDDDDDDDSSSSSSSS DSSSDDDD)
+NumShifts: 1
+  [3, 3, 18/8] ([of])
+Score: 1.0 (27.0/27.0)
+
+Ref: The army has been mounting a major operation for over two weeks in Nablus in search of Palestinian activists . ( AFA20040103.9200 - 6 )
+Hyp: Clear that the massacre yesterday aimed at setting on fire . ( ALH20040303.001 - 5 )
+Hyp': Clear that the massacre yesterday aimed at setting on fire . ( ALH20040303.001 - 5 )
+Alignment: (DDDDDDDDDSSSSSSSSSS  S S )
+NumShifts: 0
+Score: 0.84 (21.0/25.0)
+
+Ref: The army has been conducting a large-scale operation for about two weeks in Nablus in search of Palestinian activists . ( AFA20040103.9200 - 6 )
+Hyp: Has been charged with the Iraqi U . S . forces of involvement in the explosions Karbala and Baghdad yesterday . ( ALH20040304.001 - 1 )
+Hyp': Has charged with the been Iraqi U . S . forces of involvement in the explosions Karbala and Baghdad yesterday . ( ALH20040304.001 - 1 )
+Alignment: (ISSS SSSSSSSS SSSSSS  S S )
+NumShifts: 1
+  [1, 1, 3/4] ([been])
+Score: 0.84 (21.0/25.0)
+
+Ref: The Army has been launching a wide campaign for over two weeks in Nablus in search of Palestinian activists . ( AFA20040103.9200 - 6 )
+Hyp: In any case , the greater Middle East initiative to rely heavily on the Arab human development plan for 2002 and 2003 . ( ALH20040304.002 - 6 )
+Hyp': In any case , the greater Middle East initiative to rely heavily on the Arab human development plan for 2002 and 2003 . ( ALH20040304.002 - 6 )
+Alignment: (IIISSSSSSSSSSSSSSSSSSS  S   )
+NumShifts: 0
+Score: 0.92 (23.0/25.0)
+
+Ref: Tony Blair Puts Forward New Ideas to President Mubarak to Drive Peace Process ( Maher ) ( AFA20040104.3110 - 1 )
+Hyp: It the reports of the task often be decisive . ( ALH20040305.001 - 9 )
+Hyp': It the reports of the task often be decisive . ( ALH20040305.001 - 9 )
+Alignment: (DDDDDDSSSSSSSSSS S S )
+NumShifts: 0
+Score: 0.8571428571428571 (18.0/21.0)
+
+Ref: Tony Blair Proposes New Ideas to President Mubarak to Drive Peace Process Forward ( Mahir ) . ( AFA20040104.3110 - 1 )
+Hyp: When Ramon does not see the lie , it is used , in one of those attributed to the American Defense Secretary Donald Rumsfeld as saying that Tehran helped al Qaeda and Taliban flight via Iran . ( ALH20040305.002 - 1 )
+Hyp': When Ramon does not see the lie , it is used , in one of those attributed to the American Defense Secretary Donald Rumsfeld as saying that Tehran helped al Qaeda and Taliban flight via Iran . ( ALH20040305.002 - 1 )
+Alignment: (IIIIIIIIIIIISSSSS IIIIIIIISSSSSSSSSS  S   )
+NumShifts: 0
+Score: 1.6363636363636365 (36.0/22.0)
+
+Ref: Tony Blair Presents Mubarak with New Ideas to Move Peace Process ( Maher ) ( AFA20040104.3110 - 1 )
+Hyp: Said was issued in January ( January 2002 , we now know that every accusation made by the American administration before the war on Iraq were false . ( ALH20040305.002 - 3 )
+Hyp': Said was issued in January January 2002 , we now know that every accusation made by the American administration before the war on Iraq were ( false . ( ALH20040305.002 - 3 )
+Alignment: (IIIIIIIIIIIIIISSSSSSSSSSS SS S S )
+NumShifts: 1
+  [5, 5, 11/25] ([(])
+Score: 1.5789473684210527 (30.0/19.0)
+
+Ref: Tony Blair Presented President Mubarak with New Ideas to Push Peace Process ( Maher ) ( AFA20040104.3110 - 1 )
+Hyp: At the outset to thank you for the warm welcome and rejoicing , which them . ( AMI20020707.001 - 1 )
+Hyp': At the outset thank you for the warm welcome to and rejoicing , which them . ( AMI20020707.001 - 1 )
+Alignment: (ISSSSSSSS SSSSSS S   )
+NumShifts: 1
+  [3, 3, 8/9] ([to])
+Score: 0.85 (17.0/20.0)
+
+Ref: Maher told journalists that Blair , who met Mubarak yesterday evening Saturday at the Sharm el-Sheikh resort on the Red Sea , suggested that " the Group of Four should take on an important role by way of the several new ideas " he put forward . ( AFA20040104.3110 - 3 )
+Hyp: That the objective of the visit is to contact you talk with you on national issues and local information on the quarters undertaken by the development process . ( AMI20020707.001 - 3 )
+Hyp': That objective visit is to contact you talk with you national issues the and local information on the quarters undertaken the on development process by of the ( AMI20020707.001 - 3 . )
+Alignment: (DSSSSSSSSSSSS SSS  DDDDSS DDDDD DSS D  DDDSSSS DSDDD)
+NumShifts: 5
+  [3, 4, 37/27] ([of, the])
+  [1, 1, 13/13] ([the])
+  [10, 10, 31/22] ([on])
+  [20, 20, 35/24] ([by])
+  [25, 25, 46/31] ([.])
+Score: 0.9230769230769231 (48.0/52.0)
+
+Ref: Mahir told journalists that Blair , who met Mubarak yesterday evening , Saturday , in the Red Sea resort of Sharm Al-Sheikh proposed that " the Group of Four undertake an important role through some new ideas which he put forward " . ( AFA20040104.3110 - 3 )
+Hyp: From the rightist , especially the left to that Spain was sponsoring the interests of the great Saddam course is not the size of the interests of French huge during all the covenant . ( ANN20040204.001 - 2 )
+Hyp': From the that rightist , especially the left to Spain was sponsoring the interests the of great Saddam course is not the size of the interests of French huge during all the covenant . ( ANN20040204.001 - 2 )
+Alignment: (DSS S DDSSSSSSS DSS SSSSS S DDDDDSSSSSSSSS  S S )
+NumShifts: 2
+  [8, 8, 3/1] ([that])
+  [14, 14, 19/15] ([of])
+Score: 0.8333333333333334 (40.0/48.0)
+
+Ref: Maher told reporters that Blair , who met with Mubarak yesterday evening , Saturday , at the Sharm El-Sheikh resort on the Red Sea , proposed " that the Group of Four assumes a significant role through some of the new ideas he presented . " ( AFA20040104.3110 - 3 )
+Hyp: Recognize as , in particular , the American double standards for a long time in Iraq especially during the 1980s . ( ANN20040204.001 - 3 )
+Hyp': Recognize as , in particular , the American double standards for long time in Iraq especially during the 1980s . ( a ANN20040204.001 - 3 )
+Alignment: (DDDSS DDDDDDSS D DSSSSSSSSSS DSSS DSSSSDDDDDDDDDDDD)
+NumShifts: 1
+  [11, 11, 33/21] ([a])
+Score: 0.9215686274509803 (47.0/51.0)
+
+Ref: Maher told reporters that Blair , who met with Mubarak yesterday evening , Saturday , at the Sharm Al Sheikh Resort on the Red Sea , proposed " that the Quartet performs an important role through some new ideas he presented . " ( AFA20040104.3110 - 3 )
+Hyp: Have not yet done so , or rather , are not used to act as the state preparing to become healthier than before . ( ANN20040204.002 - 2 )
+Hyp': Have not yet done so , or rather , are not used to act as the state preparing to become healthier than before . ( ANN20040204.002 - 2 )
+Alignment: (SSSSS DDDDDDSS DSSSSSS DDDDDSSSSSSSSSSSSSDDDDDDD)
+NumShifts: 0
+Score: 0.9375 (45.0/48.0)
+
+Ref: The expert who wished to remain anonymous said that " the matter depends on the condition of the bodies . " ( AFA20040104.7300 - 4 )
+Hyp: Opposition , as opposed to the West should remain strong , just as British Prime Minister Tony Blair wished his country when he said that sad because his opposition to the weak . ( ANN20040204.003 - 3 )
+Hyp': Opposition , as opposed wished to West should remain strong , just as British Prime Minister Tony Blair his country said that when the he sad because his opposition to the weak . ( ANN20040204.003 - 3 )
+Alignment: (ISSS  II IIIIIIIIIIS  S SSSSSS S D S S )
+NumShifts: 3
+  [23, 24, 7/20] ([said, that])
+  [5, 5, 10/23] ([the])
+  [17, 17, 3/3] ([wished])
+Score: 1.1923076923076923 (31.0/26.0)
+
+Ref: The expert , who asked not to be identified , added , " This depends on the conditions of the bodies . " ( AFA20040104.7300 - 4 )
+Hyp: We assure the prime minister we say to them : Do not be sad , by the great strong it seems it is growing day by day . ( ANN20040204.003 - 4 )
+Hyp': We assure prime minister we say not to them : Do be sad , by great strong it seems it the is growing day the by day . ( ANN20040204.003 - 4 )
+Alignment: (ISSSSS  III S SSSSSS ISS SSS S   )
+NumShifts: 3
+  [2, 2, 16/21] ([the])
+  [10, 10, 5/5] ([not])
+  [15, 15, 19/24] ([the])
+Score: 0.9285714285714286 (26.0/28.0)
+
+Ref: The expert , who asked to remain anonymous , added that " the matter depends on the condition of the bodies . " ( AFA20040104.7300 - 4 )
+Hyp: It aimed at creating an atmosphere of terror in the same is not only think about to embark on a specific offence for various reasons but also in from the dream , as the authority believes the idea of freedom , freedom and the opposition or the heart of the system and composition of the ruling or even the idea of insurgency in this critical stage through the region , which terrified many rulers . ( ANN20040204.004 - 4 )
+Hyp': It aimed at creating an atmosphere of terror in the same is not only think about embark a specific offence for various reasons but also in from the dream , as the authority believes the idea to of freedom , freedom and the opposition or the heart of the system and composition of the ruling or even on the idea of insurgency in this critical stage through the region , which terrified many rulers . ( ANN20040204.004 - 4 )
+Alignment: (IIIIIIIIIIIIIIIIIIIIIIIIIIISS IIIISS SS IIIIIIIIIISSS ISS  S IIIIII IIIISSS S   )
+NumShifts: 2
+  [16, 16, 5/37] ([to])
+  [17, 17, 15/57] ([on])
+Score: 2.5 (70.0/28.0)
+
+Ref: The experts who asked to remain unnamed said , " the matter is related to the state of the bodies . " ( AFA20040104.7300 - 4 )
+Hyp: Practical In fact , in which Lebanon is a clear indication as you say " state law " or " state " . ( ANN20040204.004 - 7 )
+Hyp': Practical In fact in which Lebanon is a , clear " indication as you say " law state or " state . " ( ANN20040204.004 - 7 )
+Alignment: (SSSSSSSS I SSSSSS SSS   S S )
+NumShifts: 4
+  [3, 3, 8/8] ([,])
+  [15, 15, 16/16] ([state])
+  [22, 22, 20/20] ([.])
+  [17, 17, 9/9] (["])
+Score: 0.8888888888888888 (24.0/27.0)
+
+Ref: Before going into the hospital , the expert carried on to say " we have teams within the judicial police and gendarmerie and these teams in Paris are ready to intervene when we tell them we need them . " ( AFA20040104.7300 - 5 )
+Hyp: That people who govern in accordance with the standards of the class type spent from the old and intractable as long as we were told that it had produced the war . ( ANN20040204.005 - 8 )
+Hyp': That people who govern accordance with the standards of the class we type spent from the old and intractable in as long as were told that it had produced the war . ( ANN20040204.005 - 8 )
+Alignment: (SSSSSS DDSSSS SSS DDDS DS DSSSSSSSSSSS D S S )
+NumShifts: 2
+  [4, 4, 25/18] ([in])
+  [22, 22, 13/10] ([we])
+Score: 0.8444444444444444 (38.0/45.0)
+
+Ref: Before entering the hospital , the expert continued , " We have teams in the judicial police and gendarmerie . These teams are in Paris ready to intervene when we determine for them what we need . " ( AFA20040104.7300 - 5 )
+Hyp: Thus in each stage of the export of Iraqi oil has been made by the US quota formula for petroleum and other companies including American , through the branch " Sonatrach " in London . ( ANN20040205.002 - 2 )
+Hyp': Thus each stage of , the export of Iraqi oil has been made by the US quota and formula petroleum other in companies including American through the branch for Sonatrach " in London . " ( ANN20040205.002 - 2 )
+Alignment: (SSSS  SSSSSSSS SS DDSSS DSSSSSS SSSS   S S )
+NumShifts: 5
+  [1, 1, 23/21] ([in])
+  [19, 19, 17/15] ([and])
+  [25, 25, 4/3] ([,])
+  [19, 19, 31/29] ([for])
+  [28, 28, 37/34] (["])
+Score: 0.8604651162790697 (37.0/43.0)
+
+Ref: Before entering the hospital , this expert went on to say , " We have crews at the judicial police and the police , and these crews in Paris are ready to intervene when we determine for them what we need . " ( AFA20040104.7300 - 5 )
+Hyp: At Home is the spectre of war and death in the cellars of intelligence of all people , even those who thought that they accepted by the regime or are engaged in its policy . ( ANN20040220.001 - 6 )
+Hyp': the At Home is spectre of war death in cellars the of intelligence of all people , and even those who thought that they accepted by the regime or are engaged in its policy . ( ANN20040220.001 - 6 )
+Alignment: (DD DDDDDSSSSSSSSS SSSSS  SSSSSSSSSSSSSSSS D S S )
+NumShifts: 3
+  [3, 3, 2/-1] ([the])
+  [7, 7, 24/17] ([and])
+  [9, 9, 17/10] ([the])
+Score: 0.8958333333333334 (43.0/48.0)
+
+Ref: The expert continued before entering the hospital " We have teams at the Judicial Police and Gendarmes , and these teams in Paris are ready to intervene when we determine for them what we need . " ( AFA20040104.7300 - 5 )
+Hyp: The former based on exclusivity , by level , it is obedience and discipline on any other even if that is wrong pursuant to Rule the golden she said , " carried out first , to object to , if cut warheads . ( ANN20040227.001 - 3 )
+Hyp': The former based on exclusivity by level , it is obedience discipline on any other even if that is wrong pursuant and to , Rule the golden she said , carried out first , to object to , if cut warheads . " ( ANN20040227.001 - 3 )
+Alignment: ( IIIIIISSSSSSSSSSSSSS S SSSSSSSSSSSSSSSSS   S S )
+NumShifts: 3
+  [30, 30, 36/42] (["])
+  [5, 5, 17/23] ([,])
+  [11, 11, 15/21] ([and])
+Score: 1.0238095238095237 (43.0/42.0)
+
+Ref: He added " when there is Palestinian action against the Israelis the world is in total uproar yet the world does nothing about Israeli crimes , especially in Nablus and Rafah . " ( AFA20040104.8400 - 4 )
+Hyp: Wishers to talk about the June 2005 as a benefit not flight , unless Lebanon has succeeded on the occasion of the presidential elections , renewal of the international confidence in it , and today is non existent after the Paris commitments were lost in wars of the heads of states . ( ANN20040227.002 - 2 )
+Hyp': Wishers to talk June 2005 as a benefit not flight unless Lebanon has succeeded on is the occasion of the presidential elections , renewal of the international confidence in it , today non the existent after the about Paris commitments were , lost in wars of the heads and of states . ( ANN20040227.002 - 2 )
+Alignment: (IIIIIIIIIISSSSS SSS IIIIS SS ISSS SSS ISS S IIIS SSS S S )
+NumShifts: 5
+  [3, 3, 22/39] ([about])
+  [3, 3, 18/35] ([the])
+  [10, 10, 25/42] ([,])
+  [30, 30, 29/48] ([and])
+  [31, 31, 5/14] ([is])
+Score: 1.3157894736842106 (50.0/38.0)
+
+Ref: He added , " When there is a Palestinian act against the Israelis , the world jumps to attention and does not sit down again but the world remains silent towards Israeli crimes , especially in Nablus and Rafeh . " ( AFA20040104.8400 - 4 )
+Hyp: No matter how friendly the French President Jacques Chirac to Lebanon , whatever the specific relations with the assumption that ( Prime Minister Rafiq al Hariri to remain in place last ) is Paris without European accord . ( ANN20040227.002 - 4 )
+Hyp': No matter how friendly is French President Jacques Chirac the Lebanon , whatever the specific relations to with assumption that ( Prime Minister Rafiq al the Hariri to remain place last ) Paris in without European accord . ( ANN20040227.002 - 4 )
+Alignment: (DDSSSS SSSS S I SS SSSSSSSS DSSSSSSS SSS D S   )
+NumShifts: 5
+  [4, 4, 11/9] ([the])
+  [8, 8, 17/15] ([to])
+  [17, 17, 26/24] ([the])
+  [28, 28, 35/33] ([in])
+  [31, 31, 6/3] ([is])
+Score: 0.8695652173913043 (40.0/46.0)
+
+Ref: He added , " When there is a Palestinian action against the Israelis , all hell breaks loose while the world does not do anything about Israeli crimes , especially in Nablus and Rafah . " ( AFA20040104.8400 - 4 )
+Hyp: To see reason to be in the dimension of the Iraqi issues : First , where the damage Pearl's lucrative deals on the reconstruction of Iraq before the war has begun investigations which include companies . ( ANN20040228.001 - 7 )
+Hyp': To see reason to be dimension of the Iraqi issues : the First , where damage Pearl's lucrative deals on the the reconstruction of Iraq before the war has begun investigations in which include companies . ( ANN20040228.001 - 7 )
+Alignment: (SSSSSSSSSSS S ISSSSS SSSSSSSSSS SSS D S S )
+NumShifts: 3
+  [5, 5, 30/31] ([in])
+  [5, 5, 11/11] ([the])
+  [15, 15, 19/20] ([the])
+Score: 0.9024390243902439 (37.0/41.0)
+
+Ref: He added " When there is Palestinian action against the Israelis there is upheaval in the world , without the world moving an inch with regard to Israeli crimes , especially in Nablus and Rafah . " ( AFA20040104.8400 - 4 )
+Hyp: There is no more than right wing governments in the history of Israel , but also Israeli public opinion , a hard liner also believes the background of the survival and continuation of this government to nurture each other . ( ANN20040229.001 - 2 )
+Hyp': There no more than right wing is governments history of Israel the , but also Israeli in the public opinion , a hard the liner also believes background of survival continuation of this government to nurture each and other . ( ANN20040229.001 - 2 )
+Alignment: (ISSSSS ISSS SSSS  IS IS SSSSSSSSSSSSS S D S S )
+NumShifts: 5
+  [8, 9, 14/16] ([in, the])
+  [1, 1, 5/6] ([is])
+  [25, 25, 9/10] ([the])
+  [28, 28, 19/22] ([the])
+  [30, 30, 33/37] ([and])
+Score: 0.9523809523809523 (40.0/42.0)
+
+Ref: The Saudi news agency reported Prince Nayif as saying just before he left Riyadh on Saturday headed for Tunisia to take part in meetings of Arab interior ministers that " although channels are open between us and them ( the British ) , they did not inform us of anything to do with the planes . " ( AFA20040104.9200 - 3 )
+Hyp: Only way that inspired some to Damascus , despite their acceptance of the participation and the devaluation of the level , nothing has changed its position of strategic and Syria in Lebanon . ( ANN20040304.004 - 5 )
+Hyp': Only way inspired some Damascus despite their acceptance of to participation and in devaluation of the level , that nothing has changed its position strategic and ( the Syria ) , Lebanon of ANN20040304.004 - 5 the .
+Alignment: (DDDDDDDDDDSSSSSSSSS SS S SSS DSSSSSS D  S  DDDDS DSSS D DDDDDD)
+NumShifts: 10
+  [2, 2, 28/20] ([that])
+  [4, 4, 19/11] ([to])
+  [5, 5, 42/29] ([,])
+  [9, 9, 39/27] ([the])
+  [24, 24, 48/33] ([of])
+  [32, 32, 38/25] ([(])
+  [12, 12, 53/37] ([the])
+  [29, 29, 22/11] ([in])
+  [31, 31, 55/37] ([.])
+  [35, 35, 41/28] ([)])
+Score: 0.967741935483871 (60.0/62.0)
+
+Ref: The Saudi News Agency quoted Prince Naif as saying shortly before he left Riyadh on Saturday for Tunisia to participate in the meetings of Arab Foreign Ministers , " Despite the fact that channels between us and them ( the British ) are open they did not notify us of anything concerning the aircraft . " ( AFA20040104.9200 - 3 )
+Hyp: The official Arab system like the critical towards the wagon down to the abyss more quickly over time , as does not have a designated stop the rush , not even the mitigation . ( ANN20040304.005 - 1 )
+Hyp': The as official Arab system like critical towards the wagon down to the abyss more quickly over time , the does not have a designated stop ( the ) rush , not even mitigation ANN20040304.005 - the 1 .
+Alignment: ( DDDDDD DSSSSSSSSS DD SSSSS DD DSSSSSS  D DDSS DSSSS S DDDDDD)
+NumShifts: 6
+  [5, 5, 30/19] ([the])
+  [18, 18, 7/0] ([as])
+  [34, 34, 38/25] ([(])
+  [32, 32, 52/36] ([the])
+  [33, 33, 54/37] ([.])
+  [38, 38, 41/27] ([)])
+Score: 0.9016393442622951 (55.0/61.0)
+
+Ref: The Saudi News Agency quoted Prince Nayef as saying , shortly before departing Riyadh on Saturday on his way to Tunisia to participate in the Arab Interior Ministers Meeting , " Although channels are open between us and them ( the British ) , they did not notify us of anything regarding aircraft . " ( AFA20040104.9200 - 3 )
+Hyp: However , maintained the former president of the opposition to the extension of President Emile Lahoud , does not hesitate to correct a distortion of the phalanges old believes that the deliberate hit finally , is that the Phalangist Party support the president of the Republic , president of the republic , has not been submitted to the support of the renewal of the mandate extension . ( ANN20040305.001 - 3 )
+Hyp': However maintained the former president of the opposition the , extension of President Emile Lahoud , does not hesitate to correct a to distortion of the phalanges old believes that the , deliberate hit finally , is that the Phalangist Party support the president of the Republic , president of the republic has not been submitted to the support of the renewal of the mandate extension . ( ANN20040305.001 - 3 )
+Alignment: (SSSSSSSSS SSSSSSSSS IS SS ISSSS SSSSSSSSSS IISS IIISS IIISS IISSSSS S   )
+NumShifts: 3
+  [1, 1, 9/10] ([,])
+  [8, 8, 21/22] ([to])
+  [51, 51, 29/30] ([,])
+Score: 1.0333333333333334 (62.0/60.0)
+
+Ref: The Saudi News Agency quoted Prince Nayef as saying , before leaving Riyadh on Saturday heading for Tunisia to participate in the meetings of the Arab Interior Ministers , " Despite the fact that the channels between us and them ( the British ) are open , they did not inform us of anything concerning the planes . " ( AFA20040104.9200 - 3 )
+Hyp: It is tying on a correlation in the course of destiny , even the president of the Lebanese Republic is Syria making it is not making Lebanon , and the formation of governments in Lebanon would be intervention to overcome the obstacles to a Syrian . ( ANN20040309.001 - 6 )
+Hyp': It is tying a correlation course of destiny , on to even in the president of the Lebanese Republic is , Syria making the it the is making Lebanon and the formation governments in Lebanon would be intervention not overcome of obstacles to a Syrian . ( ANN20040309.001 - 6 )
+Alignment: (DSSSSSSSS DDD DDDD S  S  SSS SS DS SSS DD SSSSSSS DS SSSS D S S )
+NumShifts: 8
+  [6, 7, 20/12] ([in, the])
+  [12, 12, 31/21] ([the])
+  [3, 3, 13/9] ([on])
+  [27, 27, 28/18] ([,])
+  [31, 31, 52/40] ([of])
+  [37, 37, 18/9] ([to])
+  [26, 26, 49/37] ([not])
+  [39, 39, 34/24] ([the])
+Score: 0.84375 (54.0/64.0)
+
+Ref: On December 24 , Anan said he would meet with the interim Iraqi Governing Council on the 19th of this month to discuss the role the United Nations might play in Iraq . ( AFA20040105.3220 - 4 )
+Hyp: No one is unaware of the fact that we agree and disagree on the same boat . . that our sole and eternal the final final the only eternal and Jordan to inherit the earth and God . ( EJO20031223.001 - 3 )
+Hyp': No one is unaware fact that we agree and disagree same the boat . . that on the our sole and of eternal final to final the only eternal and the Jordan inherit the earth and God . ( EJO20031223.001 - 3 )
+Alignment: (ISSSSSSSSSS SSSS  IIS SS S IIS SSSSSS  S S )
+NumShifts: 5
+  [12, 13, 15/18] ([on, the])
+  [4, 4, 18/21] ([of])
+  [4, 4, 10/11] ([the])
+  [31, 31, 21/24] ([to])
+  [23, 23, 25/30] ([the])
+Score: 0.9736842105263158 (37.0/38.0)
+
+Ref: On 24 December Anan stated that he would on the 19th of this month meet the Iraqi Interim Ruling Council to study the role that the United Nations could play in Iraq . ( AFA20040105.3220 - 4 )
+Hyp: That the development of our partnership strong and justified by the facts of history and geography with the requirements of logic . ( MOFA20040219.001 - 1 )
+Hyp': That the development of our partnership strong and justified by facts of history and the geography with the requirements of logic . ( MOFA20040219.001 - 1 )
+Alignment: (DDDDDDDDS S SSSSSSSSSS SS DDDSSS  S S )
+NumShifts: 2
+  [10, 10, 15/7] ([the])
+  [8, 8, 22/14] ([the])
+Score: 0.8421052631578947 (32.0/38.0)
+
+Ref: On December 24 , Anan was informed that he will meet on the 19th of this month with the Iraqi Transitional Governing Council to assess the role that the United Nations may play in Iraq . ( AFA20040105.3220 - 4 )
+Hyp: Human development and economic prosperity are key to a better future for the Middle East . ( MOFA20040219.002 - 1 )
+Hyp': Human development and economic prosperity are key a better future for the Middle to East . ( MOFA20040219.002 - 1 )
+Alignment: (DDDDDDDSSSSSSSSSSS DDDS DDSSSSSSSDDDDDDDD)
+NumShifts: 1
+  [7, 7, 23/13] ([to])
+Score: 0.975609756097561 (40.0/41.0)
+
+Ref: On the 24th of December , Anan said he would meet on the 19th with the Iraqi Interim Governing Council to discuss the role the UN can play in Iraq . ( AFA20040105.3220 - 4 )
+Hyp: This is the importance of cooperation between local administrations across the border because the development of science and knowledge and know no boundaries and geographical it belongs to all mankind . ( OMSAR20040107.001 - 4 )
+Hyp': This is the importance of cooperation between local administrations across border because the development of the science and knowledge and know no boundaries and geographical it belongs to all mankind . ( OMSAR20040107.001 - 4 )
+Alignment: (IS S DSSSSSSS SS SSSSSSSSSSSSSS  S   )
+NumShifts: 1
+  [10, 10, 15/15] ([the])
+Score: 0.8055555555555556 (29.0/36.0)
+
+Ref: Straw went on to say " I believe we have established a relationship of trust with Libya which has given it the opportunity , firstly , to renounce terrorism and , secondly , to abandon its programs to develop weapons of mass destruction . " ( AFA20040105.4910 - 7 )
+Hyp: Includes the protocol of agreement to bring about a separate account the value of 10.2 million euros to finance the projects prepared by the treatment by municipal solid waste management , Minister of Administrative Development and control of the European Union Commission . ( OMSAR20040107.002 - 2 )
+Hyp': Includes the protocol of agreement to bring about separate account the a value of 10.2 million euros to finance the projects prepared by the treatment by municipal solid waste management , Minister Administrative Development and control of the of European Union Commission . ( OMSAR20040107.002 - 2 )
+Alignment: (SSSSSSSSSSS S DDSSSSS SSSSSSSSSS SSSSSSS SSSS S S )
+NumShifts: 2
+  [8, 8, 11/11] ([a])
+  [32, 32, 40/38] ([of])
+Score: 0.88 (44.0/50.0)
+
+Ref: Straw continued , " I believe that we have established a relationship of trust with Libya that has allowed it firstly to renounce terrorism and secondly to abandon continuation of its program to develop weapons of mass destruction . " ( AFA20040105.4910 - 7 )
+Hyp: For example , industrial revolution not only to day or days or a few years . ( SPC20030310.001 - 5 )
+Hyp': For example , a industrial revolution not only day or days or to few years . ( SPC20030310.001 - 5 )
+Alignment: (SS DDDDDDD DDSSSSSSSS DDDSSSSSSSSDDDDDDDDDDDD)
+NumShifts: 2
+  [7, 7, 21/12] ([to])
+  [11, 11, 10/2] ([a])
+Score: 0.9777777777777777 (44.0/45.0)
+
+Ref: Straw went on to say , " I do believe that we have established a relationship of trust with Libya that gave her the opportunity to first abandon terrorism , and second , to abandon the continuation of her program to develop weapons of mass destruction . " ( AFA20040105.4910 - 7 )
+Hyp: The council to pay for several years , special attention to the theme of the children of refugees and internally displaced persons who were forced to flee their homes , as well as children who have been recruited and sexual exploitation , giving particular importance to the girls because of their more vulnerable to additional risks , particularly sexual violence . ( UN20040101.002 - 3 )
+Hyp': The council pay to for several , years , special attention to theme have of the children of refugees and internally displaced persons who were the forced to flee their homes , as well as children who been recruited and sexual exploitation , giving particular importance to girls the because of their more vulnerable to additional risks particularly sexual violence . ( UN20040101.002 - 3 )
+Alignment: (SSS IS SSSSSS SSS ISSSSSS S SSS IIIIIII IS III S S ISS SSSSS D S S )
+NumShifts: 5
+  [2, 2, 3/3] ([to])
+  [35, 35, 12/12] ([have])
+  [11, 11, 23/24] ([the])
+  [46, 46, 35/47] ([the])
+  [56, 56, 5/5] ([,])
+Score: 1.0377358490566038 (55.0/53.0)
+
+Ref: Straw continued " I believe we established close relations with Libya that allowed it first , to relinquish terrorism and second , to give up continuing its program to develop weapons of mass destruction . " ( AFA20040105.4910 - 7 )
+Hyp: My delegation is satisfied with the completion of a large part of the recommendations of the mission visited Central Africa from 7 to 16 June 2003 . ( UN20040101.005 - 6 )
+Hyp': My delegation is satisfied with the completion a large part of the recommendations of the mission visited Central Africa from 7 to 16 of June 2003 . ( UN20040101.005 - 6 )
+Alignment: (DDDDDSSSS DDSSSSSSSSSSSSSSSS DS SS D S S )
+NumShifts: 1
+  [7, 7, 31/23] ([of])
+Score: 0.8536585365853658 (35.0/41.0)
+
+Ref: Washington 1 - 6 ( AFP ) - An American official announced yesterday Monday that Turkish Prime Minister Recep Tayyip Erdogan would head for the United States at the end of January on an official visit mainly dedicated to Iraq , especially its Kurdish region . ( AFA20040105.6000 - 2 )
+Hyp: Could not be underestimated from the central element of national reconciliation in the rehabilitation of societies that have suffered the bitterness of the armed conflict and its implications on the social fabric of economic infrastructure of states and regions concerned , and to enable them to the page of the past and look into the future of peaceful coexistence and cooperation and unity of purpose and interests . ( UN20040101.007 - 2 )
+Hyp': Could not be underestimated from the central element of national reconciliation in the rehabilitation of societies that have suffered the bitterness of the armed conflict and implications the social fabric of economic infrastructure of states and regions concerned and enable them to the page of the past and look into the future on of peaceful coexistence and cooperation and unity to of , purpose its and interests . ( UN20040101.007 - 2 )
+Alignment: (IISSSSSSSSSSSSSS ISSSSSSSSS IIIIIIIIIIISSS S IIIIIIS IISSSSS S S SS  S   )
+NumShifts: 4
+  [26, 26, 42/64] ([its])
+  [27, 27, 32/54] ([on])
+  [38, 38, 40/62] ([,])
+  [39, 39, 38/60] ([to])
+Score: 1.2549019607843137 (64.0/51.0)
+
+Ref: Washington 6 - 1 ( AFP ) An American official announced yesterday , Monday , that Turkish Prime Minister Recep Tayyip Erdogan is to travel to the United State at the end of January on an official visit most of which will focus on Iraq , in particular the Kurdish part . ( AFA20040105.6000 - 2 )
+Hyp: As the governor said , by improving the financial market rules and regulations , organized by the clear and objective will help improve the efficiency of investment to stimulate higher rates of savings of citizens . ( XIN20040103.0035 - 4 )
+Hyp': - As governor said by improving financial market rules and , regulations , organized by the clear to and objective the help improve the efficiency of investment stimulate higher rates of will savings of citizens XIN20040103.0035 the 4 . ( )
+Alignment: (DD SSSSSSSSS S DDDDSSSS SS DSS S DDSSSS D DDSSSS DS  DDD )
+NumShifts: 8
+  [35, 36, 52/40] ([., (])
+  [1, 1, 26/19] ([the])
+  [3, 3, 12/10] ([,])
+  [5, 5, 48/36] ([the])
+  [19, 19, 41/30] ([will])
+  [25, 25, 23/15] ([to])
+  [35, 35, 2/-1] ([-])
+  [38, 38, 56/40] ([)])
+Score: 0.9122807017543859 (52.0/57.0)
+
+Ref: Washington 1 - 6 ( AFP ) - An American official announced yesterday , Monday , that Turkish Prime Minister Rajab Tayyib Ardogan will head to the United States at the end of January for an official visit that will be dedicated in the most part to Iraq , and especially to the Kurdish aspect of it . ( AFA20040105.6000 - 2 )
+Hyp: It is also expected to meet with Syrian citizens living in Istanbul , Turkish businessmen . ( XIN20040105.0070 - 7 )
+Hyp': - It ( is also expected meet with Syrian citizens living in Istanbul , Turkish businessmen to . XIN20040105.0070 7 )
+Alignment: (DD S SSSSSSSSSS D DDDDDDS DDDDDSSSSDDDDDDDDDDDDDDDDDDDDDDDDDDDD)
+NumShifts: 3
+  [4, 4, 25/14] ([to])
+  [16, 16, 4/0] ([(])
+  [18, 18, 2/-1] ([-])
+Score: 0.9682539682539683 (61.0/63.0)
+
+Ref: Washington 6 - 1 ( AFP ) - An American official declared yesterday , Monday , that the Turkish Prime Minister Recep Tayyip Erdogan will head to the United States in the end of January on an official visit that will be allocated largely to Iraq and especially its Kurdish section . ( AFA20040105.6000 - 2 )
+Hyp: The peace process depends on the cease fire . ( XIN20040107.0046 - 7 )
+Hyp': - ( ) The peace process depends on the cease fire . XIN20040107.0046 7
+Alignment: (DD D D DDDDDSSSSS DDDDDSSSSSDDDDDDDDDDDDDDDDDDDDDDDDDDDDD)
+NumShifts: 3
+  [9, 9, 4/-1] ([(])
+  [11, 11, 2/-1] ([-])
+  [13, 13, 6/1] ([)])
+Score: 0.9824561403508771 (56.0/57.0)
+
+Ref: Riyadh 1 - 5 ( AFP ) - A Saudi security source told Agence France Presse today Monday that a bomb was found in a private telecommunications office in Riyadh on the night of Sunday to Monday and that it was " taken away , " without giving any details about the type of bomb . ( AFA20040105.6200 - 2 )
+Hyp: The Israeli government did not have any step for the advancement of the peace process between the two sides as they continue the closure of offices and Palestinian institutions in Jerusalem continued detention of prisoners and detainees have not withdrawn to what it was before 28 September 2000 as part of the obligations on the Israeli government in the first phase of the plan " road map " which provides the establishment of a Palestinian state by 2005 . ( XIN20040108.0031 - 5 )
+Hyp': The Israeli government did not have any step for the advancement the peace process between the two sides as they continue the closure of in offices a and Palestinian institutions in Jerusalem continued detention of on the prisoners detainees of have not withdrawn to and what it was before 28 September 2000 as part of the obligations Israeli government the first phase of the plan " road map " which provides the establishment of Palestinian state by 2005 . ( XIN20040108.0031 - 5 )
+Alignment: (ISSSSSSSSSSSSSSSSSSSSSSS I SSS IIIS  IS ISSS S  IIIIIIIIIIIIISSSS SSSSS S IIIS  S S )
+NumShifts: 5
+  [53, 54, 30/33] ([on, the])
+  [11, 11, 33/38] ([of])
+  [36, 36, 37/42] ([and])
+  [57, 57, 23/23] ([in])
+  [73, 73, 24/25] ([a])
+Score: 1.1967213114754098 (73.0/61.0)
+
+Ref: Riyadh 5 - 1 ( AFP ) A Saudi security source today , Monday , told France Press that on Sunday evening / Monday a bomb was discovered in a private telecommunications office in Riyadh and was " removed " from the site . He did not give details about the nature of the bomb . ( AFA20040105.6200 - 2 )
+Hyp: Lhasa January 10 ( Xinhua ) Private economy witnessed Tibet Autonomous Region in southwest China has developed rapidly in recent years with the support of the central government , according to Chow Chung Chieu director of the Department of Industry and Trade Area of Tibet . ( XIN20040110.0019 - 2 )
+Hyp': Lhasa January 10 ( Xinhua ) , Private economy witnessed Tibet Autonomous Region southwest China has developed rapidly recent years with support in central government in according to Chow Chung Chieu director of the Department of Industry and Trade Area the of of the Tibet . ( XIN20040110.0019 - 2 )
+Alignment: (DSSS S DDDDD SSSSSSSSSSSSSSS DDSS SSSSSSS DDSSSSSS S  S  S   )
+NumShifts: 5
+  [24, 25, 52/43] ([of, the])
+  [12, 12, 33/23] ([in])
+  [17, 17, 33/26] ([in])
+  [20, 20, 50/40] ([the])
+  [24, 24, 12/5] ([,])
+Score: 0.8524590163934426 (52.0/61.0)
+
+Ref: Riyadh 1 - 5 ( AFP ) - A Saudi security source told Agence France Presse today , Monday , that a bomb was found the night of Sunday-Monday at an office for telecommunications in Riyadh and that " it was removed " from the scene without mentioning any details on the nature of the bomb . ( AFA20040105.6200 - 2 )
+Hyp: , demonstrated today in the 200 armed Palestinians from Fatah , in protest against the assassination attempt against their commander in the northern West Bank Zakariya Zabidi Battalions vowed reprisals . ( XIN20040113.0114 - 7 )
+Hyp': - ( ) demonstrated in 200 armed Palestinians today , Fatah , in protest against the assassination attempt against their commander in northern West Bank Zakariya Zabidi Battalions vowed from the reprisals . XIN20040113.0114 7 the
+Alignment: (DD D D DDDDSSSSS  S DDSSS DDDSSSSS DSSSSSSS  DDDDDSSSS DDDDDDD)
+NumShifts: 8
+  [31, 31, 4/-1] ([(])
+  [1, 1, 17/9] ([,])
+  [2, 2, 16/8] ([today])
+  [3, 3, 44/29] ([the])
+  [6, 6, 43/28] ([from])
+  [20, 20, 51/34] ([the])
+  [32, 32, 2/-1] ([-])
+  [35, 35, 6/1] ([)])
+Score: 0.9516129032258065 (59.0/62.0)
+
+Ref: Riyadh 5 - 1 ( AFP ) - A Saudi security source told the French News Agency today , Monday , that Sunday - Monday night a bomb was found at a private office for telephone communications in Riyadh , which was " withdrawn " from the location , without mentioning any details on the nature of the bomb . ( AFA20040105.6200 - 2 )
+Hyp: Train Rapid Between India and Pakistan up to in India ( XIN20040115.0055 - 1 )
+Hyp': - 1 ( ) Train Rapid Between India and Pakistan up to in India XIN20040115.0055
+Alignment: (DD   D DDDDDDDDDDSSSSSSSSSSSDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD)
+NumShifts: 3
+  [12, 13, 2/-1] ([-, 1])
+  [12, 12, 4/1] ([(])
+  [14, 14, 6/2] ([)])
+Score: 0.9846153846153847 (64.0/65.0)
+
+Ref: Tehran 1 - 6 ( AFP ) - An Iranian foreign ministry spokesman stated that Iran welcomes its neighbor Afghanistan's adoption of a new constitution and continues its full support for the temporary government led by Hamid Karzai . ( AFA20040106.6100 - 2 )
+Hyp: Tokyo January 16 ( Xinhua ) The Japanese government decided Friday to extend the participation of the Japanese forces in the task of the United Nations peacekeeping in the Golan Heights occupied by Israel , following the issuance of the Security Council a decision on the continuation of a task . ( XIN20040115.0212 - 2 )
+Hyp': Tokyo January 16 ( Xinhua ) The Japanese decided Friday to extend the participation of the Japanese forces in the task of of a the United Nations peacekeeping in the Golan Heights occupied Israel , following the issuance of the Security Council a decision government on the by continuation task . ( XIN20040115.0212 - 2 )
+Alignment: (DSSS S IISSSSSSSSSSSSSS  IIIIIIISSSSSSSS IIIS IS SS  S   )
+NumShifts: 3
+  [47, 48, 21/22] ([of, a])
+  [8, 8, 33/45] ([government])
+  [33, 33, 35/47] ([by])
+Score: 1.0909090909090908 (48.0/44.0)
+
+Ref: Tehran 6 - 1 ( AFP ) A spokesman for the Iranian Ministry of Foreign Affairs stated that Iran welcomed the adoption by its neighbor Afghanistan of a new constitution and continued its full support for the interim government headed by Hamid Karzai . ( AFA20040106.6100 - 2 )
+Hyp: Received January 16 ( Xinhua ) Kuwait , Sheikh Mohammad Sabah al Salem al Sabah , Kuwait's foreign minister , a telephone conversation this evening his American counterpart , Colin Powell addressed the American Declaration of Kuwait as strategic ally outside NATO . American ( XIN20040116.0152 - 2 )
+Hyp': Received January 16 ( Xinhua ) Kuwait , Sheikh Mohammad Sabah al Salem al Sabah , Kuwait's foreign minister , telephone conversation this evening his American a counterpart , Colin Powell addressed American Declaration of the Kuwait as strategic ally outside NATO . American ( XIN20040116.0152 - 2 )
+Alignment: (DSSS S SSSSSSSSSSSSSSSSSSSS SSSSSSSS SSSSSS I S   )
+NumShifts: 2
+  [20, 20, 27/26] ([a])
+  [32, 32, 36/35] ([the])
+Score: 0.8775510204081632 (43.0/49.0)
+
+Ref: Tehran 1 - 6 ( AFP ) - Iranian Foreign Ministry spokesman said that Iran welcomes the adoption by her neighbor , Afghanistan , of a new constitution and continues it full support of the temporary government headed by Hamid Karzai . ( AFA20040106.6100 - 2 )
+Hyp: The Falcon in a press statement distributed here this evening that this place distinctive Kuwait with the United States will enable it to transfer the voice of the peoples of the region and hopes for the issues and problems . ( XIN20040116.0152 - 5 )
+Hyp': The Falcon in press statement distributed here this evening this place distinctive that Kuwait with the United States will enable to transfer of a the voice peoples the it region and of the hopes for the issues and problems . ( XIN20040116.0152 - 5 )
+Alignment: (DSSSSSSSSSSSS SS DSSSSSS  SSSS SS  SSSSSS  S S )
+NumShifts: 5
+  [26, 27, 34/32] ([of, the])
+  [3, 3, 25/23] ([a])
+  [9, 9, 13/12] ([that])
+  [27, 27, 24/22] ([of])
+  [20, 20, 30/28] ([it])
+Score: 0.8723404255319149 (41.0/47.0)
+
+Ref: Tehran 6 - 1 ( AFP ) - A spokesperson for the Iranian Foreign Ministry stated that Iran welcomes from its neighbor Afghanistan the adoption of a new constitution and continues its complete support for the interim government headed by Hamed Karzai . ( AFA20040106.6100 - 2 )
+Hyp: CANBERRA , January 17 ( Xinhua ) Australian Foreign Minister Alexander Downer said today that negotiations with the United States on a bilateral free trade agreement still faces problems . ( XIN20040117.0050 - 2 )
+Hyp': CANBERRA , January 17 ( Xinhua ) - Australian Foreign Minister Alexander that Downer said today negotiations with the a United States on bilateral free trade agreement still faces problems XIN20040117.0050 . ( 2 )
+Alignment: (SSSS S  DDDDS SS DSSSSS DD DDDDSSSSSSSSSSS  DD  )
+NumShifts: 4
+  [29, 30, 43/32] ([., (])
+  [14, 14, 16/10] ([that])
+  [21, 21, 26/17] ([a])
+  [30, 30, 7/6] ([-])
+Score: 0.8541666666666666 (41.0/48.0)
+
+Ref: Hamid Reza Asefi said in statements broadcast by the Iranian news agency on the night of Monday to Tuesday that the adoption of the first constitution since the Taliban regime collapsed constitutes " an important step . " ( AFA20040106.6100 - 3 )
+Hyp: The company will also guide the electricity market will price of electricity prices in peak season . ( XIN20040117.0140 - 6 )
+Hyp': The company in will also guide the electricity market will price of electricity prices peak season . ( XIN20040117.0140 - 6 )
+Alignment: (DDSS DDDDDSSS DDDDSSSS DDSSSSSSSSSSDDDDDDDD)
+NumShifts: 1
+  [13, 13, 4/1] ([in])
+Score: 0.9534883720930233 (41.0/43.0)
+
+Ref: In statements broadcast by the Iranian news agency Hamid Reza Asfi said on Monday evening / Tuesday that the adoption of the first constitution since the fall of the Taliban regime constituted " an important step " . ( AFA20040106.6100 - 3 )
+Hyp: The Chinese ambassador would be reviewed during the visit of the agreement of strategic cooperation between Egypt and China on the occasion of the five years to sign it , he pointed out that would be signed several agreements between the two countries , including agreements in the areas of economic and information . ( XIN20040118.0127 - 4 )
+Hyp': The Chinese ambassador would be reviewed the during the visit agreement of strategic cooperation between Egypt and China on that the occasion of the five years to sign it , he pointed out would be signed several agreements between the two countries , of the including agreements in areas of economic and information . ( XIN20040118.0127 - 4 )
+Alignment: (IISSSS SSSSSSSSSSSS  S  IIIIIIIIIIIISSS IIS  SSSSSSSS  S S )
+NumShifts: 3
+  [9, 10, 27/43] ([of, the])
+  [31, 31, 17/17] ([that])
+  [47, 47, 4/5] ([the])
+Score: 1.1627906976744187 (50.0/43.0)
+
+Ref: Hamid Redha Assafi said in statements telecast by the Iranian News Agency the night of Monday-Tuesday that the adoption of the first constitution since the collapse of the Taliban regime constitutes " an important step . " ( AFA20040106.6100 - 3 )
+Hyp: Egyptian Communications Company Launched New Television Station in Iraq ( XIN20040121.0073 - 1 )
+Hyp': in Egyptian Communications Company Launched New Television Station Iraq ( XIN20040121.0073 - 1 )
+Alignment: (DDDD DDDDDDDSSSSSSSSSSSSSDDDDDDDDDDDDDDDDD)
+NumShifts: 1
+  [7, 7, 4/-1] ([in])
+Score: 1.0 (42.0/42.0)
+
+Ref: Hameed Rida Asifi said in statements aired by the Iranian News Agency Monday-Tuesday night , that the adoption of the first constitution since the fall of the Taliban regime constitutes " an important step " . ( AFA20040106.6100 - 3 )
+Hyp: Fault occurred in the Wednesday night , on the eve of the traditional Chinese lunar new year . ( XIN20040123.0090 - 5 )
+Hyp': Fault occurred in the Wednesday night , on the eve of the traditional Chinese lunar new year XIN20040123.0090 - . ( 5 )
+Alignment: (DDSS DDD DDDS  S S DDDDDDD DSSSSSSS  DDS )
+NumShifts: 1
+  [17, 18, 36/20] ([., (])
+Score: 0.7804878048780488 (32.0/41.0)
+
+Ref: North Korea and Iran Participated in Developing Weapons of Mass Destruction in Libya ( newspaper ) ( AFA20040106.7300 - 1 )
+Hyp: Chinese Economic and Financial Figures in the First and Last Week as Well as ( XIN20040127.0006 - 1 )
+Hyp': Chinese Economic and Financial Figures in the First and Last Week as Well as ( XIN20040127.0006 - 1 )
+Alignment: (SS SS DDSSSSSSSS S   )
+NumShifts: 0
+Score: 0.7142857142857143 (15.0/21.0)
+
+Ref: North Korea and Iran Participated in Developing Weapons of Mass Destruction in Libya ( Press ) . ( AFA20040106.7300 - 1 )
+Hyp: Of the local government statistics show that there were 139 farm raising poultry , 36.63 . market , supermarket , 31 for the slaughter of chickens in Beijing . ( XIN20040128.0114 - 6 )
+Hyp': Of the local government statistics show that there were 139 farm raising poultry , 36.63 . of market , in supermarket , 31 for the slaughter chickens Beijing . ( XIN20040128.0114 - 6 )
+Alignment: (IIIIIIIISSSSSSSS SS IIIISSSS  S S )
+NumShifts: 2
+  [26, 26, 5/17] ([in])
+  [25, 25, 8/15] ([of])
+Score: 1.3636363636363635 (30.0/22.0)
+
+Ref: North Korea , Iran Involved in Developing Weapons of Mass Destruction in Libya ( Newspaper ) ( AFA20040106.7300 - 1 )
+Hyp: SANAA , January 28 ( Xinhua ) The sources said Yemeni forces units of the Yemeni and American Coast Guard concluded today joint military exercises in the Gulf of Aden . ( XIN20040128.0119 - 2 )
+Hyp': SANAA January 28 Xinhua The , sources said Yemeni forces units of the Yemeni and American Coast Guard concluded today joint military exercises in the Gulf of ( Aden . ) ( XIN20040128.0119 - 2 )
+Alignment: (IIISS SSSSS IIIIIIIIISS IIS IS  S S )
+NumShifts: 3
+  [1, 1, 2/7] ([,])
+  [3, 3, 13/28] ([(])
+  [4, 4, 15/30] ([)])
+Score: 1.4761904761904763 (31.0/21.0)
+
+Ref: North Korea and Iran Participated in Development of Weapons of Mass Destruction in Libya ( newspaper ) ( AFA20040106.7300 - 1 )
+Hyp: Made chairman of the committee on defence and interior , this statement during the parliament to report to parliament on the visit by a delegation of the Committee to China . ( XIN20040128.0152 - 3 )
+Hyp': Made chairman the committee on defence and interior , this statement during the parliament to report to parliament on the visit of by a delegation of the Committee to China . ( XIN20040128.0152 - 3 )
+Alignment: (IIIISS IIIIIIIIIISSSS SSSSSSSSS S S )
+NumShifts: 1
+  [2, 2, 7/21] ([of])
+Score: 1.4545454545454546 (32.0/22.0)
+
+Ref: The newspaper said the Libyan announcement could enable inspectors to study the military technology of North Korea and Iran . ( AFA20040106.7300 - 6 )
+Hyp: " said that China provide an opportunity for Zimbabwe to establish cooperation with the state was prepared to offer friendly assistance . " ( XIN20040128.0152 - 4 )
+Hyp': " that said China provide an opportunity for Zimbabwe to establish cooperation with the state was prepared to offer friendly assistance . " ( XIN20040128.0152 - 4 )
+Alignment: (SS SSSSSS IIS SSSSSSS I S S )
+NumShifts: 1
+  [1, 1, 2/2] ([said])
+Score: 0.88 (22.0/25.0)
+
+Ref: The newspaper said that the Libyan announcement might allow the inspectors to study the military technology of both North Korea and Iran . ( AFA20040106.7300 - 6 )
+Hyp: Kabul January 29 ( Xinhua ) Manuel de Almeida the Selva of the United Nations spokesman here today that 2500 Afghan refugees from eight states in particular Iran have returned to their country so far in 2004 . ( XIN20040129.0044 - 2 )
+Hyp': Kabul January 29 ( Xinhua ) Manuel de Almeida that the Selva United Nations spokesman here the today to 2500 Afghan refugees from of eight states in particular Iran have returned their country so far in 2004 . ( XIN20040129.0044 - 2 )
+Alignment: (IIIIIISSS  ISSSS S SSSS SSSS IIIIIIII  S S )
+NumShifts: 4
+  [11, 11, 16/22] ([of])
+  [11, 11, 9/15] ([the])
+  [30, 30, 11/17] ([to])
+  [17, 17, 3/8] ([that])
+Score: 1.3214285714285714 (37.0/28.0)
+
+Ref: The newspaper said that the Libyan announcement may allow inspectors to study the military technology of both North Korea and Iran . ( AFA20040106.7300 - 6 )
+Hyp: On the other hand , 50 refugees from seven other states with the assistance of the agency . ( XIN20040129.0044 - 5 )
+Hyp': On other hand , the 50 refugees from seven other states with the assistance of the agency . ( XIN20040129.0044 - 5 )
+Alignment: (SSSS SSSSSSS DS DDDSS  S S )
+NumShifts: 1
+  [1, 1, 4/4] ([the])
+Score: 0.7777777777777778 (21.0/27.0)
+
+Ref: The newspaper said that the Libyan declaration could allow inspectors to study the military technology of North Korea and Iran . ( AFA20040106.7300 - 6 )
+Hyp: The number of Palestinian prisoners , prison authorities yesterday returned 37 prisoners who were released today , and today their 16 prisoners , without mentioning names other reasons for the write off . ( XIN20040129.0054 - 3 )
+Hyp': The number Palestinian prisoners , prison authorities yesterday returned 37 prisoners who were released today , the today their 16 prisoners , without mentioning names other reasons of for write and off . ( XIN20040129.0054 - 3 )
+Alignment: ( IIIIIIIIIIIISSS SSSSSSSSSS SS S  S S )
+NumShifts: 3
+  [2, 2, 15/27] ([of])
+  [16, 16, 18/30] ([and])
+  [28, 28, 4/15] ([the])
+Score: 1.2692307692307692 (33.0/26.0)
+
+Total TER: 0.9930278884462151 (3988.0/4016.0)
+Number of calls to beam search: 1954
+Number of segments scored: 100
+Number of shifts tried: 1854

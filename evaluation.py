@@ -23,34 +23,13 @@
 ##############################################################################
 import subprocess
 import os
-import platform
-
-def creation_date(path_to_file):
-    """
-    Try to get the date that a file was created, falling back to when it was
-    last modified if that isn't possible.
-    See http://stackoverflow.com/a/39501288/1709587 for explanation.
-    """
-    if platform.system() == 'Windows':
-        return os.path.getctime(path_to_file)
-    else:
-        stat = os.stat(path_to_file)
-        try:
-            return stat.st_birthtime
-        except AttributeError:
-            # We're probably on Linux. No easy way to get creation dates here,
-            # so we'll settle for when its content was last modified.
-            return stat.st_mtime
 
 def filterTER (lines):
     result = ''
     lines = lines.splitlines()
     for line in lines:
         if "Total TER:" in line:
-            result += line.replace("Total TER:","")
-        if "Warning, Invalid line:" in line:
-            result = " There are lines unchanged from source to reference. HTER cannot work in those cases."
-            break
+            result += line.replace("Total TER:","")[0:6]
     return result + "\n"
 
 def filterBLEU (line, BLEU_type):
@@ -59,11 +38,6 @@ def filterBLEU (line, BLEU_type):
     if BLEU_type == "BLEU3GRAM": line = line.split(',', 1)[1].split('/')[1]
     if BLEU_type == "BLEU4GRAM": line = line.split(',', 1)[1].split('/')[2]
     line = line.replace('\n','').replace('\r', '')
-    return line
-
-def filterGTM (line):
-    if "You should not be comparing equal runs" in line:
-        line = "There are lines unchanged from source to reference. GTM cannot work in those cases.\n"
     return line
 
 def filter_output(proccess,method):
@@ -81,28 +55,26 @@ def filter_output(proccess,method):
         pass
     return final_text
 
-cached_results = {}
 
-def evaluate(checkbox_indexes, test, reference):
-    checkbox_indexes_constants = ["WER","PER","HTER", "GTM", "BLEU","BLEU2GRAM","BLEU3GRAM","BLEU4GRAM"]
-    DIRECTORY = os.path.abspath("evaluation_scripts") + "/"
-    TER_DIRECTORY = DIRECTORY + "tercom-0.7.25/tercom.7.25.jar"
-    GTM_DIRECTORY = DIRECTORY + "gtm-1.3-binary/gtm.jar"
+def evaluate(checkbox_indexes, hypothesis, reference, all_cached_results, file_hash):
+    cached_results = all_cached_results[file_hash]
+    checkbox_indexes_constants = ["WER","PER","HTER", "BLEU","BLEU2GRAM","BLEU3GRAM","BLEU4GRAM"]
+    DIRECTORY = "/home/moses/Downloads/api/TTT/evaluation_scripts/"
+    TER_DIRECTORY = DIRECTORY + "java_ter_060428 TERtest"
     EXEC_PERL = "perl "
     EXEC_JAVA = "java "
 
     evaluation_scripts_commands = {}
-    evaluation_scripts_commands["WER"] = EXEC_PERL + DIRECTORY +  "WER" + ".pl" + " -t " + test + " -r " + reference
-    evaluation_scripts_commands["PER"] = EXEC_PERL + DIRECTORY +  "PER" + ".pl" + " -t " + test + " -r " + reference
-    evaluation_scripts_commands["HTER"] = EXEC_JAVA + "-jar " + TER_DIRECTORY + " -r " + reference + " -h " + test
-    evaluation_scripts_commands["GTM"] = EXEC_JAVA + "-jar " + GTM_DIRECTORY + " -t " +  test + " " + reference
-    evaluation_scripts_commands["BLEU"] = EXEC_PERL + DIRECTORY + "BLEU.pl " + reference +" < " + test
+    evaluation_scripts_commands["WER"] = EXEC_PERL + DIRECTORY +  "WER" + ".pl" + " -t " + hypothesis + " -r " + reference
+    evaluation_scripts_commands["PER"] = EXEC_PERL + DIRECTORY +  "PER" + ".pl" + " -t " + hypothesis + " -r " + reference
+    evaluation_scripts_commands["HTER"] = EXEC_JAVA + "-cp " + TER_DIRECTORY + " " + hypothesis + " " + reference
+    evaluation_scripts_commands["BLEU"] = EXEC_PERL + DIRECTORY + "BLEU.pl " + reference +" < " + hypothesis
     return_results = ""
     checkbox_index = 0
     BLEU_cached_results = ""
     for checkbox in checkbox_indexes:
         if checkbox:
-            key = (test,creation_date(test),reference,creation_date(reference), checkbox_indexes_constants[checkbox_index])
+            key = checkbox_indexes_constants[checkbox_index]
             if key in cached_results: return_results += cached_results[key]
             else:
 
@@ -129,5 +101,5 @@ def evaluate(checkbox_indexes, test, reference):
 
 
         checkbox_index += 1
-    return_results
+    all_cached_results[file_hash] = cached_results
     return return_results

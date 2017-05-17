@@ -50,11 +50,13 @@ install_and_import("time")
 install_and_import("shutil")
 install_and_import("urlparse")
 install_and_import("itertools")
+install_and_import("hashlib")
+install_and_import("datetime")
 
 from commands import *
 from files_processing import *
 from constants import moses_dir_fn
-from evaluation_scripts import evaluate
+from evaluation import evaluate
 
 
 UI_INFO = """
@@ -112,6 +114,7 @@ class TTT():
         self.source_lang = None
         self.target_lang = None
         self.cwd = os.getcwd()
+        self.files_hashes_and_performed_evaluations_indices = {}
 
     def is_moses_dir_valid(self, directory):
         is_valid = True
@@ -338,6 +341,7 @@ class TTT():
         return output
 
     def _machine_translation(self, mt_in):
+        os.chdir("/home/moses/language_models/")
         base=os.path.basename(mt_in)
         mt_out = os.path.dirname(mt_in) +  "/" + os.path.splitext(base)[0] + "_translated" + os.path.splitext(base)[1]
         output = "Running decoder....\n\n"
@@ -367,5 +371,34 @@ class TTT():
         return output
 
 
+
     def evaluate(self, checkbox_indexes, test, reference):
-        return evaluate(checkbox_indexes, test, reference)
+        file_hash = hashlib.md5(test + reference).hexdigest()
+        temp_dir = "/home/moses/temp/" + file_hash
+        test_path = temp_dir + "/test.txt"
+        reference_path = temp_dir + "/reference.txt"
+
+        #the hash resulted from the sum of the two files guarantees
+        #that only once will the combinations of them exist
+        #and so only once is neccesary to create a temporal directory
+        try:
+            os.stat(temp_dir)
+        except:
+            os.mkdir(temp_dir)
+            with open(test_path, "w") as f:
+                f.write(test)
+            with open(reference_path, "w") as f:
+                f.write(reference)
+
+        now = datetime.datetime.now()
+        if not hasattr(self, 'current_hour'): self.current_hour = now.hour
+        #every hour the cached results are reset
+        if (now.hour != self.current_hour):
+            self.files_hashes_and_performed_evaluations_indices.clear()
+            self.current_hour = now.hour
+
+        #finally a dictionary from the file_hashes to the result of the
+        #previously performed evaluation scripts is stored, by the hour
+        if (file_hash not in self.files_hashes_and_performed_evaluations_indices):
+            self.files_hashes_and_performed_evaluations_indices[file_hash] = {}
+        return evaluate(checkbox_indexes, test_path, reference_path, self.files_hashes_and_performed_evaluations_indices, file_hash)

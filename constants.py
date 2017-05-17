@@ -65,7 +65,7 @@ train_fn = "training.out"
 is_win = os.name == 'nt'
 
 # Moses commands
-tokenizer = "%s/scripts/tokenizer/tokenizer.perl " 
+tokenizer = "%s/scripts/tokenizer/tokenizer.perl "
 
 truecaser_train = "%s/scripts/recaser/train-truecaser.perl "
 model = "%s/truecase-model.%s"
@@ -74,7 +74,7 @@ truecaser = "%s/scripts/recaser/truecase.perl "
 
 cleaner = "%s/scripts/training/clean-corpus-n.perl "
 
-lm_train = "%s/bin/lmplz " + "-o 3 "  # TODO: Should be chosen by the user.
+lm_train = "%s/bin/lmplz " + "--discount_fallback -o 3 "  # TODO: Should be chosen by the user.
 
 blm_train = "%s/bin/build_binary "
 
