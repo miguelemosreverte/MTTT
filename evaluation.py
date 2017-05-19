@@ -29,8 +29,9 @@ def filterTER (lines):
     lines = lines.splitlines()
     for line in lines:
         if "Total TER:" in line:
-            result += line.replace("Total TER:","")[0:6]
-    return result + "\n"
+            line.replace("Total TER:","").replace('\n','').replace('\r', '')
+            result += line.split("(")[0]
+    return result
 
 def filterBLEU (line, BLEU_type):
     if BLEU_type == "BLEU":      line = line.split(',', 1)[0]
