@@ -105,15 +105,18 @@ class TTT():
                 f.write(self.moses_dir)
                 f.close()
 
-        self.saved_absolute_path = os.path.abspath("saved")
-        self.saved_relative_filepath = "./saved"
-        if not os.path.exists(self.saved_absolute_path):
-            os.makedirs(self.saved_absolute_path)
-
         # Init
         self.source_lang = None
         self.target_lang = None
         self.cwd = os.getcwd()
+        #this property (files_hashes_and_performed_evaluations_indices)
+        #is protected from concurrency because
+        #its keys are made from the hashes made from the contents
+        #of the files, this way the unicity of the keys of the hash
+        #guarantee that concurrenty will never overwrite content:
+        #It is impossible for file content to share keys if they
+        # do not perfectly share content, and so it is impossible for them
+        #to overwrite each other.
         self.files_hashes_and_performed_evaluations_indices = {}
 
     def is_moses_dir_valid(self, directory):
@@ -158,7 +161,7 @@ class TTT():
         return self.moses_dir
 
     def _prepare_corpus(self, language_model_name, source_lang, target_lang, st_train, tt_train, lm_text):
-        self.language_model_name = str(language_model_name)
+        language_model_name = language_model_name
         self.source_lang = str(source_lang)
         self.target_lang = str(target_lang)
         self.lm_text = str(lm_text)
@@ -166,15 +169,15 @@ class TTT():
         self.st_train = str(st_train)
         """@brief     Runs moses truecaser, tokenizer and cleaner."""
         output = ""
-        output_directory = self.language_model_name
+        output_directory = language_model_name
         if output_directory is not None:
             # Change directory to the output_directory.
             try:
-                os.chdir(self.language_model_name)
+                os.chdir(language_model_name)
             except:
                 # Output directory does not exist.
-                os.mkdir(self.language_model_name)
-                os.chdir(self.language_model_name)
+                os.mkdir(language_model_name)
+                os.chdir(language_model_name)
             cmds = []
             # 1) Tokenization
             # a) Target text
@@ -272,10 +275,9 @@ class TTT():
             output += "ERROR. You need to complete all fields."
         return output
 
-    def _train(self):
+    def _train(self,language_model_name):
         # print "==============================>", self.is_corpus_preparation_ready
-        print self.language_model_name
-        output_directory = self.language_model_name
+        output_directory = language_model_name
         output = ""
         if output_directory is not None and self.is_corpus_preparation_ready:
             cmds = []
@@ -329,7 +331,7 @@ class TTT():
                     output += err
 
             # Adding output from training.out
-            training = self.language_model_name + "/training.out"
+            training = language_model_name + "/training.out"
             try:
                 with open(training, "r") as f:
                    output += "\n" + f.read()
@@ -340,14 +342,14 @@ class TTT():
             output = "ERROR: Please go to the first tab and complete the process."
         return output
 
-    def _machine_translation(self, mt_in):
+    def _machine_translation(self, language_model_name, mt_in):
         os.chdir("/home/moses/language_models/")
         base=os.path.basename(mt_in)
         mt_out = os.path.dirname(mt_in) +  "/" + os.path.splitext(base)[0] + "_translated" + os.path.splitext(base)[1]
         output = "Running decoder....\n\n"
         # Run the decoder.
         cmd = get_test_command(self.moses_dir,
-                                   self.language_model_name + "/train/model/moses.ini",
+                                   language_model_name + "/train/model/moses.ini",
                                    mt_in,
                                    mt_out)
         # use Popen for non-blocking
