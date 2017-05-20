@@ -50,7 +50,7 @@ install_and_import("datetime")
 
 from commands import *
 from files_processing import *
-from constants import moses_dir_fn
+from constants import moses_dir_fn, languages
 from evaluation import evaluate
 
 
@@ -73,19 +73,20 @@ class TTT():
         self.files_hashes_and_performed_evaluations_indices = {}
 
         self.moses_dir = "/home/moses/mosesdecoder"
+        self.temp_dir = "/home/moses/temp/"
+        self.lm_dir = "/home/moses/language_models/"
 
     def _prepare_corpus(self, language_model_name, source_lang, target_lang, training_source, training_target, language_model_text):
         """@brief     Runs moses truecaser, tokenizer and cleaner."""
 
-        output_directory = '/home/moses/language_models/' + language_model_name
+        output_directory = self.lm_dir + language_model_name
         training_source_filepath = output_directory + '/' + 'training_source'
         training_target_filepath = output_directory + '/' + 'training_target'
         language_model_filepath = output_directory + '/' + 'language_model_text'
 
-
-        if not os.path.exists(output_directory):
-            os.makedirs(output_directory)
-
+        #the app will never let the users create the same language model twice
+        #which guarantees that the following will always be needed:
+        os.makedirs(output_directory)
         with open(language_model_filepath, "w") as f:
             f.write(language_model_text.encode('utf-8'))
         with open(training_source_filepath, "w") as f:
@@ -95,108 +96,105 @@ class TTT():
 
 
         output = ""
-        if output_directory is not None:
-            os.chdir(output_directory)
-            cmds = []
-            # 1) Tokenization
-            # a) Target text
-            target_tok = generate_input_tok_fn(target_lang,
-                                                    output_directory)
-            cmds.append(get_tokenize_command(self.moses_dir,
-                                             target_lang,
-                                             training_target_filepath,
-                                             target_tok))
-            # b) Source text
-            source_tok = generate_input_tok_fn(source_lang,
-                                                    output_directory)
-            cmds.append(get_tokenize_command(self.moses_dir,
-                                             source_lang,
-                                             training_source_filepath,
-                                             source_tok))
-            # c) Language model
-            lm_tok = generate_lm_tok_fn(output_directory)
-            cmds.append(get_tokenize_command(self.moses_dir,
-                                             source_lang,
-                                             language_model_filepath,
-                                             lm_tok))
+        os.chdir(output_directory)
+        cmds = []
+        # 1) Tokenization
+        # a) Target text
+        target_tok = generate_input_tok_fn(target_lang,
+                                                output_directory)
+        cmds.append(get_tokenize_command(self.moses_dir,
+                                         target_lang,
+                                         training_target_filepath,
+                                         target_tok))
+        # b) Source text
+        source_tok = generate_input_tok_fn(source_lang,
+                                                output_directory)
+        cmds.append(get_tokenize_command(self.moses_dir,
+                                         source_lang,
+                                         training_source_filepath,
+                                         source_tok))
+        # c) Language model
+        lm_tok = generate_lm_tok_fn(output_directory)
+        cmds.append(get_tokenize_command(self.moses_dir,
+                                         source_lang,
+                                         language_model_filepath,
+                                         lm_tok))
 
-            # 2) Truecaser training
-            # a) Target text
-            cmds.append(get_truecaser_train_command(self.moses_dir,
-                                                    output_directory,
-                                                    target_lang,
-                                                    target_tok))
-            # b) Source text
-            cmds.append(get_truecaser_train_command(self.moses_dir,
-                                                    output_directory,
-                                                    source_lang,
-                                                    source_tok))
-            # c) Language model
-            cmds.append(get_truecaser_train_command(self.moses_dir,
-                                                    output_directory,
-                                                    target_lang,
-                                                    lm_tok))
+        # 2) Truecaser training
+        # a) Target text
+        cmds.append(get_truecaser_train_command(self.moses_dir,
+                                                output_directory,
+                                                target_lang,
+                                                target_tok))
+        # b) Source text
+        cmds.append(get_truecaser_train_command(self.moses_dir,
+                                                output_directory,
+                                                source_lang,
+                                                source_tok))
+        # c) Language model
+        cmds.append(get_truecaser_train_command(self.moses_dir,
+                                                output_directory,
+                                                target_lang,
+                                                lm_tok))
 
-            # 3) Truecaser
-            input_true = output_directory + "/input.true"
-            # a) Target text
-            target_true = generate_input_true_fn(target_lang,
-                                                      output_directory)
-            cmds.append(get_truecaser_command(self.moses_dir,
-                                              output_directory,
-                                              target_lang,
-                                              target_tok,
-                                              target_true))
-            # b) Source text
-            source_true = generate_input_true_fn(source_lang,
-                                                      output_directory)
-            cmds.append(get_truecaser_command(self.moses_dir,
-                                              output_directory,
-                                              source_lang,
-                                              source_tok,
-                                              source_true))
-            # c) Language model
-            lm_true = generate_lm_true_fn(output_directory)
-            cmds.append(get_truecaser_command(self.moses_dir,
-                                              output_directory,
-                                              target_lang,
-                                              target_tok, lm_true))
+        # 3) Truecaser
+        input_true = output_directory + "/input.true"
+        # a) Target text
+        target_true = generate_input_true_fn(target_lang,
+                                                  output_directory)
+        cmds.append(get_truecaser_command(self.moses_dir,
+                                          output_directory,
+                                          target_lang,
+                                          target_tok,
+                                          target_true))
+        # b) Source text
+        source_true = generate_input_true_fn(source_lang,
+                                                  output_directory)
+        cmds.append(get_truecaser_command(self.moses_dir,
+                                          output_directory,
+                                          source_lang,
+                                          source_tok,
+                                          source_true))
+        # c) Language model
+        lm_true = generate_lm_true_fn(output_directory)
+        cmds.append(get_truecaser_command(self.moses_dir,
+                                          output_directory,
+                                          target_lang,
+                                          target_tok, lm_true))
 
-            # 4) Cleaner
-            # a) Target text
-            input_clean = generate_input_clean_fn(output_directory)
-            source_clean = input_true + "." + source_lang
-            target_clean = input_true + "." + target_lang
-            cmds.append(get_cleaner_command(self.moses_dir,
-                                            source_lang,
-                                            target_lang,
-                                            input_true,
-                                            input_clean))
+        # 4) Cleaner
+        # a) Target text
+        input_clean = generate_input_clean_fn(output_directory)
+        source_clean = input_true + "." + source_lang
+        target_clean = input_true + "." + target_lang
+        cmds.append(get_cleaner_command(self.moses_dir,
+                                        source_lang,
+                                        target_lang,
+                                        input_true,
+                                        input_clean))
 
-            # Start threads
-            all_ok = True
-            for cmd in cmds:
-                output += "Running command: <code> <p style=\"background-color:LightGray;\">%s" % cmd + "</p> </code>"
-                proc = subprocess.Popen([cmd],
-                                        stdout=subprocess.PIPE,
-                                        stderr=subprocess.PIPE,
-                                        shell=True)
-                all_ok = all_ok and (proc.wait() == 0)
-                out, err = proc.communicate()
-                if out or err:  output += "Output: %s<br>%s<br><br><br>" % (out, err)
-                else:           output += "<br><br><br>"
+        # Start threads
+        all_ok = True
+        for cmd in cmds:
+            output += "Running command: <code> <p style=\"background-color:LightGray;\">%s" % cmd + "</p> </code>"
+            proc = subprocess.Popen([cmd],
+                                    stdout=subprocess.PIPE,
+                                    stderr=subprocess.PIPE,
+                                    shell=True)
+            all_ok = all_ok and (proc.wait() == 0)
+            out, err = proc.communicate()
+            if out or err:  output += "Output: %s<br>%s<br><br><br>" % (out, err)
+            else:           output += "<br><br><br>"
 
-            if all_ok:
-                with open(output_directory + '/lm.ini', 'w') as f:
-                    f.write("source_lang:"+source_lang+"<br>")
-                    f.write("target_lang:"+target_lang+"<br>")
-        else:
-            output += "ERROR. You need to complete all fields."
+        if all_ok:
+            with open(output_directory + '/lm.ini', 'w') as f:
+                f.write("source_lang:"+source_lang+"<br>")
+                f.write("target_lang:"+target_lang+"<br>")
         return output
 
     def _train(self,language_model_name, source_lang, target_lang):
 
-        output_directory = '/home/moses/language_models/' + language_model_name
+        output_directory = self.lm_dir + language_model_name
         output = ""
         if output_directory is not None:
             cmds = []
@@ -262,18 +260,18 @@ class TTT():
 
     def _machine_translation(self, language_model_name, text):
         file_hash = hashlib.md5(text.encode('utf-8')).hexdigest()
-        mt_in = '/home/moses/temp/' + file_hash
+        mt_in = self.temp_dir + file_hash
         with open(mt_in, "w") as f:
             f.write(text.encode('utf-8'))
 
         #Todo see if this os.chdir can be removed
-        os.chdir("/home/moses/language_models/")
+        os.chdir(self.lm_dir)
         base=os.path.basename(mt_in)
         mt_out = os.path.dirname(mt_in) +  "/" + os.path.splitext(base)[0] + "_translated" + os.path.splitext(base)[1]
         output = "Running decoder....<br><br>"
         # Run the decoder.
         cmd = get_test_command(self.moses_dir,
-                                  '/home/moses/language_models/' +  language_model_name + "/train/model/moses.ini",
+                                  self.lm_dir +  language_model_name + "/train/model/moses.ini",
                                    mt_in,
                                    mt_out)
         # use Popen for non-blocking
@@ -295,11 +293,12 @@ class TTT():
         f.close()
         return output
 
-
+    def get_available_languages(self):
+        return languages
 
     def evaluate(self, checkbox_indexes, test, reference):
         file_hash = hashlib.md5(test + reference).hexdigest()
-        temp_dir = "/home/moses/temp/" + file_hash
+        temp_dir = self.temp_dir + file_hash
         test_path = temp_dir + "/test.txt"
         reference_path = temp_dir + "/reference.txt"
 
