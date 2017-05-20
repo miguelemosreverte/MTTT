@@ -70,7 +70,7 @@ class TTT():
         Moses only accepts filenames, not text, as parameter input
         for machine translation.
         '''
-        files_hashes_and_performed_evaluations_indices = {}
+        self.files_hashes_and_performed_evaluations_indices = {}
 
         self.moses_dir = "/home/moses/mosesdecoder"
 
@@ -319,11 +319,11 @@ class TTT():
         if not hasattr(self, 'current_hour'): current_hour = now.hour
         #every hour the cached results are reset
         if (now.hour != current_hour):
-            files_hashes_and_performed_evaluations_indices.clear()
+            self.files_hashes_and_performed_evaluations_indices.clear()
             current_hour = now.hour
 
         #finally a dictionary from the file_hashes to the result of the
         #previously performed evaluation scripts is stored, by the hour
-        if (file_hash not in files_hashes_and_performed_evaluations_indices):
-            files_hashes_and_performed_evaluations_indices[file_hash] = {}
-        return evaluate(checkbox_indexes, test_path, reference_path, files_hashes_and_performed_evaluations_indices, file_hash)
+        if (file_hash not in self.files_hashes_and_performed_evaluations_indices):
+            self.files_hashes_and_performed_evaluations_indices[file_hash] = {}
+        return evaluate(checkbox_indexes, test_path, reference_path, self.files_hashes_and_performed_evaluations_indices, file_hash)
