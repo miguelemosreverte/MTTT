@@ -251,7 +251,12 @@ class TTT():
             output = "ERROR: Please go to the first tab and complete the process."
         return output
 
-    def _machine_translation(self, language_model_name, mt_in):
+    def _machine_translation(self, language_model_name, text):
+        file_hash = hashlib.md5(text.encode('utf-8')).hexdigest()
+        mt_in = '/home/moses/temp/' + file_hash
+        with open(mt_in, "w") as f:
+            f.write(text.encode('utf-8'))
+
         #Todo see if this os.chdir can be removed
         os.chdir("/home/moses/language_models/")
         base=os.path.basename(mt_in)
