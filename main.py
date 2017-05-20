@@ -42,14 +42,9 @@ def install_and_import(package):
 #os is one of the modules that I know comes with 2.7, no questions asked.
 import os
 #these other ones I a am not so sure of. Thus the install function.
-install_and_import("requests")
 install_and_import("subprocess")
-install_and_import("json")
 install_and_import("sys")
 install_and_import("time")
-install_and_import("shutil")
-install_and_import("urlparse")
-install_and_import("itertools")
 install_and_import("hashlib")
 install_and_import("datetime")
 
@@ -59,56 +54,13 @@ from constants import moses_dir_fn
 from evaluation import evaluate
 
 
-UI_INFO = """
-<ui>
-  <menubar name='MenuBar'>
-    <menu action='VisualsMenu'>
-      <menu action='Visuals'>
-        <menuitem action='metro'/>
-        <menuitem action='paper'/>
-        <separator />
-        <menuitem action='lights_on_option'/>
-      </menu>
-    </menu>
-  </menubar>
-</ui>
-"""
-
 class TTT():
 
     def __init__(self):
-        # Recognize OS
-        if os.name == 'posix':  # Linux
-            self.is_linux, self.is_windows = True, False
-        elif os.name == 'nt':  # Windows
-            self.is_linux, self.is_windows = False, True
-        else:
-            print "Unknown OS"
-            exit(1)
-        # Check Moses Config file.
-        self.moses_dir = ""
-        try:
-            f = open(moses_dir_fn, 'r')
-            self.moses_dir = f.read()
-            f.close()
-        except IOError, OSError:
-            # File does not exist.
-            self.moses_dir = self.get_moses_dir()
-            f = open(moses_dir_fn, 'w')
-            f.write(self.moses_dir)
-            f.close()
-        finally:
-            # File content is wrong
-            if not self.is_moses_dir_valid(self.moses_dir):
-                moses_dir = self.get_moses_dir()
-                f = open(moses_dir_fn, 'w')
-                f.write(self.moses_dir)
-                f.close()
-
+        self.moses_dir = "/home/moses/mosesdecoder"
         # Init
         self.source_lang = None
         self.target_lang = None
-        self.cwd = os.getcwd()
         #this property (files_hashes_and_performed_evaluations_indices)
         #is protected from concurrency because
         #its keys are made from the hashes made from the contents
@@ -119,55 +71,14 @@ class TTT():
         #to overwrite each other.
         self.files_hashes_and_performed_evaluations_indices = {}
 
-    def is_moses_dir_valid(self, directory):
-        is_valid = True
-        if directory == "":
-            is_valid = False   # Empty string
-        elif not os.path.exists(directory):
-            is_valid = False  # Directory does not exist
-        else:
-            # Check if dir exists but does not contain moses installation
-            is_valid = self._check_moses_installation(directory)
-
-        return is_valid
-
-    def _check_moses_installation(self, directory):
-        # TODO: TRY catch OSError when permission denied!!
-        file_content = [f for f in os.listdir(directory)]
-        moses_files = ["/scripts/tokenizer/tokenizer.perl",
-                       "/scripts/recaser/truecase.perl",
-                       "/scripts/training/clean-corpus-n.perl",
-                       "/bin/lmplz",
-                       "/bin/build_binary",
-                       "/scripts/training/train-model.perl",
-                       "/bin/moses"
-                      ]
-        if self.is_windows:
-            moses_files = [f.replace("/", "\\")
-                           for f in moses_files]
-            moses_files = [f + ".exe"
-                           for f in moses_files
-                           if "/bin" in f]
-        is_valid = True
-        for mfile in moses_files:
-            is_valid = is_valid and os.path.isfile(directory + mfile)
-        return is_valid
-
-    def get_moses_dir(self):
-        """
-            Gets Moses directory.
-        """
-        self.moses_dir = "/home/moses/mosesdecoder"
-        return self.moses_dir
-
     def _prepare_corpus(self, language_model_name, source_lang, target_lang, st_train, tt_train, lm_text):
+        """@brief     Runs moses truecaser, tokenizer and cleaner."""
         language_model_name = language_model_name
         self.source_lang = str(source_lang)
         self.target_lang = str(target_lang)
         self.lm_text = str(lm_text)
         self.tt_train = str(tt_train)
         self.st_train = str(st_train)
-        """@brief     Runs moses truecaser, tokenizer and cleaner."""
         output = ""
         output_directory = language_model_name
         if output_directory is not None:
@@ -267,7 +178,6 @@ class TTT():
                 output += "Output: %s\n%s\n\n\n" % (out, err)
 
             if all_ok:
-                self.is_corpus_preparation_ready = True
                 with open(output_directory + '/lm.ini', 'w') as f:
                     f.write("source_lang:"+self.source_lang+"\n")
                     f.write("target_lang:"+self.target_lang+"\n")
@@ -276,10 +186,9 @@ class TTT():
         return output
 
     def _train(self,language_model_name):
-        # print "==============================>", self.is_corpus_preparation_ready
-        output_directory = language_model_name
+        output_directory = '/home/moses/language_models/' + language_model_name
         output = ""
-        if output_directory is not None and self.is_corpus_preparation_ready:
+        if output_directory is not None:
             cmds = []
             output = "Log:\n\n"
             # Train the language model.
@@ -331,7 +240,7 @@ class TTT():
                     output += err
 
             # Adding output from training.out
-            training = language_model_name + "/training.out"
+            training = output_directory + "/training.out"
             try:
                 with open(training, "r") as f:
                    output += "\n" + f.read()
@@ -343,13 +252,14 @@ class TTT():
         return output
 
     def _machine_translation(self, language_model_name, mt_in):
+        #Todo see if this os.chdir can be removed
         os.chdir("/home/moses/language_models/")
         base=os.path.basename(mt_in)
         mt_out = os.path.dirname(mt_in) +  "/" + os.path.splitext(base)[0] + "_translated" + os.path.splitext(base)[1]
         output = "Running decoder....\n\n"
         # Run the decoder.
         cmd = get_test_command(self.moses_dir,
-                                   language_model_name + "/train/model/moses.ini",
+                                  '/home/moses/language_models/' +  language_model_name + "/train/model/moses.ini",
                                    mt_in,
                                    mt_out)
         # use Popen for non-blocking
