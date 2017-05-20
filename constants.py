@@ -24,12 +24,6 @@
 ##############################################################################
 import os
 
-# Language codes.
-ENG = "en"
-FR = "fr"
-DE = "de"
-
-
 def is_valid_dir(directory):
     """
     @brief     Determines if a directory is valid.
@@ -53,7 +47,7 @@ def is_valid_file(filepath):
     return is_valid
 
 # Languages we show in the GUI to work with Moses.
-languages = [ENG, FR, DE]
+languages = ["en", "es", "fr", "it", "ru", "cz", "ar", "pt", "de"]
 
 # Config file where info from Moses is saved.
 moses_dir_fn = "moses.config"
