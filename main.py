@@ -74,12 +74,13 @@ class TTT():
 
         self.moses_dir = "/home/moses/mosesdecoder"
         self.temp_dir = "/home/moses/temp/"
-        self.lm_dir = "/home/moses/language_models/"
+        self.lm_dir_not_persistent = "/home/moses/language_models/"
+        self.lm_dir_persistent = "/var/lib/moses_api_backup/language_models/"
 
     def _prepare_corpus(self, language_model_name, source_lang, target_lang, training_source, training_target, language_model_text):
         """@brief     Runs moses truecaser, tokenizer and cleaner."""
 
-        output_directory = self.lm_dir + language_model_name
+        output_directory = self.lm_dir_persistent + language_model_name
         training_source_filepath = output_directory + '/' + 'training_source'
         training_target_filepath = output_directory + '/' + 'training_target'
         language_model_filepath = output_directory + '/' + 'language_model_text'
@@ -194,7 +195,7 @@ class TTT():
 
     def _train(self,language_model_name, source_lang, target_lang):
 
-        output_directory = self.lm_dir + language_model_name
+        output_directory = self.lm_dir_persistent + language_model_name
         output = ""
         if output_directory is not None:
             cmds = []
@@ -265,13 +266,13 @@ class TTT():
             f.write(text.encode('utf-8'))
 
         #Todo see if this os.chdir can be removed
-        os.chdir(self.lm_dir)
+        os.chdir(self.lm_dir_persistent)
         base=os.path.basename(mt_in)
         mt_out = os.path.dirname(mt_in) +  "/" + os.path.splitext(base)[0] + "_translated" + os.path.splitext(base)[1]
         output = "Running decoder....<br><br>"
         # Run the decoder.
         cmd = get_test_command(self.moses_dir,
-                                  self.lm_dir +  language_model_name + "/train/model/moses.ini",
+                                  self.lm_dir_persistent +  language_model_name + "/train/model/moses.ini",
                                    mt_in,
                                    mt_out)
         # use Popen for non-blocking
