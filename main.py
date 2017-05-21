@@ -265,7 +265,7 @@ class TTT():
         return output
 
     def _machine_translation(self, language_model_name, text):
-        file_hash = hashlib.md5(text.encode('utf-8')).hexdigest()
+        file_hash = hashlib.md5(language_model_name.encode('utf-8')+text.encode('utf-8')).hexdigest()
         mt_in = self.temp_dir + file_hash
         with open(mt_in, "w") as f:
             f.write(text.encode('utf-8'))
