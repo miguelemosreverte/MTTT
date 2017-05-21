@@ -31,7 +31,7 @@ def install_and_import(package):
 	try:
 	        import pip
     	except ImportError:
-		print ("no pip")
+		print ("no pip", file=sys.stderr)
 		os.system('python get_pip.py')
 	finally:
 		import pip
@@ -207,7 +207,7 @@ class TTT():
             output = "Log:<br><br>"
             # Train the language model.
             lm_arpa = generate_lm_fn(output_directory)
-            print ("out:", lm_arpa, "<br>")
+            print ("out:" + lm_arpa + "\n", file=sys.stderr)
             cmds.append(get_lmtrain_command(self.moses_dir,
                                             target_lang,
                                             output_directory + '/' + 'lm.true',
@@ -215,7 +215,7 @@ class TTT():
 
             # Binarize arpa
             blm = generate_blm_fn(output_directory)
-            print ("binarized out:", blm, "<br>")
+            print ("binarized out:"+ blm + "\n", file=sys.stderr)
             cmds.append(get_blmtrain_command(self.moses_dir,
                                              target_lang,
                                              lm_arpa,
